@@ -8,7 +8,6 @@ from PIL import Image
 import io
 import base64
 from datetime import datetime
-import requests
 
 # =====================================================================
 # PAGE CONFIG  
@@ -61,116 +60,6 @@ st.markdown("""
     }
 </style>
 """, unsafe_allow_html=True)
-
-# =====================================================================
-# ROBOFLOW API INTEGRATION
-# =====================================================================
-
-def predict_with_roboflow(image, api_key, workspace, project, version, confidence=40):
-    """
-    Kirim gambar ke Roboflow API untuk inference
-    Returns: predictions atau None jika gagal
-    """
-    try:
-        # Convert image to bytes
-        _, img_encoded = cv2.imencode('.jpg', image)
-        img_bytes = img_encoded.tobytes()
-        
-        # Roboflow API endpoint
-        url = f"https://detect.roboflow.com/{workspace}/{project}/{version}"
-        
-        # Request params
-        params = {
-            "api_key": api_key,
-            "confidence": confidence,
-            "overlap": 30
-        }
-        
-        # Send request
-        response = requests.post(
-            url,
-            params=params,
-            data=img_bytes,
-            headers={"Content-Type": "application/x-www-form-urlencoded"}
-        )
-        
-        if response.status_code == 200:
-            return response.json()
-        else:
-            st.error(f"❌ Roboflow API Error: {response.status_code} - {response.text}")
-            return None
-            
-    except Exception as e:
-        st.error(f"❌ Error calling Roboflow API: {str(e)}")
-        return None
-
-
-def create_mask_from_roboflow(image, predictions):
-    """
-    Buat binary mask dari hasil prediksi Roboflow
-    Returns: binary mask (grayscale)
-    """
-    h, w = image.shape[:2]
-    mask = np.zeros((h, w), dtype=np.uint8)
-    
-    if predictions and 'predictions' in predictions:
-        for pred in predictions['predictions']:
-            if 'points' in pred:
-                # Polygon segmentation
-                points = pred['points']
-                pts = np.array([[p['x'], p['y']] for p in points], dtype=np.int32)
-                cv2.fillPoly(mask, [pts], 255)
-            elif 'x' in pred and 'y' in pred and 'width' in pred and 'height' in pred:
-                # Bounding box (fallback)
-                x = int(pred['x'] - pred['width'] / 2)
-                y = int(pred['y'] - pred['height'] / 2)
-                w = int(pred['width'])
-                h = int(pred['height'])
-                cv2.rectangle(mask, (x, y), (x + w, y + h), 255, -1)
-    
-    return mask
-
-
-def visualize_roboflow_predictions(image, predictions):
-    """
-    Visualisasi hasil prediksi Roboflow pada gambar
-    """
-    result = image.copy()
-    
-    if predictions and 'predictions' in predictions:
-        for pred in predictions['predictions']:
-            # Get confidence
-            confidence = pred.get('confidence', 0)
-            class_name = pred.get('class', 'burn')
-            
-            if 'points' in pred:
-                # Draw polygon
-                points = pred['points']
-                pts = np.array([[p['x'], p['y']] for p in points], dtype=np.int32)
-                cv2.polylines(result, [pts], True, (0, 255, 0), 2)
-                
-                # Label
-                x_min = min([p['x'] for p in points])
-                y_min = min([p['y'] for p in points])
-                label = f"{class_name}: {confidence:.2f}"
-                cv2.putText(result, label, (int(x_min), int(y_min) - 10),
-                           cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
-            
-            elif 'x' in pred and 'y' in pred:
-                # Draw bounding box
-                x = int(pred['x'] - pred['width'] / 2)
-                y = int(pred['y'] - pred['height'] / 2)
-                w = int(pred['width'])
-                h = int(pred['height'])
-                
-                cv2.rectangle(result, (x, y), (x + w, y + h), (0, 255, 0), 2)
-                
-                label = f"{class_name}: {confidence:.2f}"
-                cv2.putText(result, label, (x, y - 10),
-                           cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
-    
-    return result
-
 
 # =====================================================================
 # EXACT BATCH PROCESSING CODE
@@ -404,55 +293,18 @@ def get_image_download_link(img, filename):
 
 def main():
     st.markdown('<div class="main-header">🔥 Burn Wound Detection & Measurement</div>', unsafe_allow_html=True)
-    st.markdown('<div class="sub-header">Flexible Mode: Full Pipeline, Batch Exact, or AI-Powered</div>', unsafe_allow_html=True)
+    st.markdown('<div class="sub-header">Flexible Mode: Full Pipeline or Batch Exact</div>', unsafe_allow_html=True)
 
     # Sidebar
     with st.sidebar:
         st.image("https://img.icons8.com/fluency/96/000000/medical-heart.png", width=100)
         st.title("⚙️ Settings")
         
-        # === ROBOFLOW API SETTINGS ===
-        with st.expander("🤖 Roboflow API Settings", expanded=False):
-            st.markdown("**Configure your Roboflow credentials:**")
-            
-            roboflow_api_key = st.text_input(
-                "API Key",
-                type="password",
-                help="Your Roboflow API key"
-            )
-            roboflow_workspace = st.text_input(
-                "Workspace",
-                help="Your Roboflow workspace name"
-            )
-            roboflow_project = st.text_input(
-                "Project",
-                help="Your Roboflow project name"
-            )
-            roboflow_version = st.text_input(
-                "Version",
-                help="Model version (e.g., 1, 2, 3)"
-            )
-            
-            # Validation
-            roboflow_enabled = all([
-                roboflow_api_key,
-                roboflow_workspace,
-                roboflow_project,
-                roboflow_version
-            ])
-            
-            if roboflow_enabled:
-                st.success("✅ Roboflow API configured!")
-            else:
-                st.warning("⚠️ Fill all fields to enable Roboflow")
-        
-        st.markdown("---")
-        
         st.subheader("🎯 Processing Mode")
         processing_mode = st.radio(
             "Pilih mode:",
-            ["📸 Full Pipeline (1 File)", "🎯 Exact Batch (2 Files)", "🤖 Roboflow AI (1 File)"],
-            help="Full Pipeline = upload 1 gambar, segmentasi real-time\nExact Batch = upload original + mask\nRoboflow AI = gunakan AI model dari Roboflow"
+            ["📸 Full Pipeline (1 File)", "🎯 Exact Batch (2 Files)"],
+            help="Full Pipeline = upload 1 gambar, segmentasi real-time\nExact Batch = upload original + mask untuk hasil yang sama persis"
         )
         
         # Settings untuk Full Pipeline
@@ -470,17 +322,6 @@ def main():
                 help="Hole Filled = hasil terbaik (sama dengan batch)"
             )
         
-        # Settings untuk Roboflow
-        elif processing_mode == "🤖 Roboflow AI (1 File)":
-            st.subheader("🎯 AI Settings")
-            confidence_threshold = st.slider(
-                "Confidence Threshold",
-                min_value=0,
-                max_value=100,
-                value=40,
-                help="Minimum confidence untuk deteksi"
-            )
-        
         st.subheader("🪙 Koin Referensi")
         coin_diameter = st.number_input(
             "Diameter koin (cm):",
@@ -496,11 +337,11 @@ def main():
         
         st.subheader("🔧 Advanced")
         show_debug = st.checkbox("Show Debug Info", value=True)
-        if processing_mode in ["📸 Full Pipeline (1 File)", "🤖 Roboflow AI (1 File)"]:
+        if processing_mode == "📸 Full Pipeline (1 File)":
             show_steps = st.checkbox("Show Intermediate Steps", value=False)
         
         st.markdown("---")
-        st.info("💡 **Tip:**\n\nFull Pipeline = fleksibel, coba berbagai metode\n\nExact Batch = hasil sama persis dengan Colab\n\nRoboflow AI = gunakan AI model custom Anda")
+        st.info("💡 **Tip:**\n\nFull Pipeline = fleksibel, coba berbagai metode\n\nExact Batch = hasil sama persis dengan Colab")
 
     # Main Content
     if processing_mode == "📸 Full Pipeline (1 File)":
@@ -540,29 +381,29 @@ def main():
                     
                     # STEP 2: Segmentation from RESIZED image
                     if seg_method == "Binary Gray":
-                        gray, binary_gray = grayscale_otsu_segmentation(image_resized)
+                        gray, binary_gray = grayscale_otsu_segmentation(image)
                         final_mask = binary_gray
                         intermediate = {"gray": gray, "binary": binary_gray}
                         
                     elif seg_method == "Binary HSV":
-                        binary_hsv = hsv_otsu_segmentation(image_resized)
+                        binary_hsv = hsv_otsu_segmentation(image)
                         final_mask = binary_hsv
                         intermediate = {"binary_hsv": binary_hsv}
                         
                     elif seg_method == "Opening":
-                        binary_hsv = hsv_otsu_segmentation(image_resized)
+                        binary_hsv = hsv_otsu_segmentation(image)
                         opening, closing, hole_filled = morphological_processing(binary_hsv)
                         final_mask = opening
                         intermediate = {"binary_hsv": binary_hsv, "opening": opening}
                         
                     elif seg_method == "Closing":
-                        binary_hsv = hsv_otsu_segmentation(image_resized)
+                        binary_hsv = hsv_otsu_segmentation(image)
                         opening, closing, hole_filled = morphological_processing(binary_hsv)
                         final_mask = closing
                         intermediate = {"binary_hsv": binary_hsv, "opening": opening, "closing": closing}
                         
                     else:  # Hole Filled (Default/Recommended)
-                        binary_hsv = hsv_otsu_segmentation(image_resized)
+                        binary_hsv = hsv_otsu_segmentation(image)
                         opening, closing, hole_filled = morphological_processing(binary_hsv)
                         final_mask = hole_filled
                         intermediate = {"binary_hsv": binary_hsv, "opening": opening, "closing": closing, "hole_filled": hole_filled}
@@ -668,7 +509,7 @@ def main():
                             }])
                             st.download_button("Download CSV", csv_data.to_csv(index=False), "result.csv", "text/csv")
     
-    elif processing_mode == "🎯 Exact Batch (2 Files)":
+    else:
         # ====== MODE 2: EXACT BATCH ======
         st.markdown('<div class="info-box">🎯 <strong>Exact Batch Mode</strong><br>Upload 2 files untuk hasil yang 100% sama dengan batch processing!</div>', unsafe_allow_html=True)
         
@@ -772,192 +613,6 @@ def main():
                                 'pixels_per_cm': area_info['pixels_per_cm']
                             }])
                             st.download_button("Download CSV", csv_data.to_csv(index=False), "result.csv")
-    
-    else:
-        # ====== MODE 3: ROBOFLOW AI ======
-        st.markdown('<div class="info-box">🤖 <strong>Roboflow AI Mode</strong><br>Upload gambar dan gunakan AI model custom Anda untuk deteksi luka bakar otomatis!</div>', unsafe_allow_html=True)
-        
-        # Check if Roboflow is configured
-        if not roboflow_enabled:
-            st.error("❌ **Roboflow API belum dikonfigurasi!**")
-            st.info("📝 Silakan isi kredensial Roboflow di sidebar (Settings → Roboflow API Settings)")
-            st.markdown("""
-            **Cara mendapatkan kredensial:**
-            1. Login ke [Roboflow](https://roboflow.com/)
-            2. Buka project Anda
-            3. Copy **Workspace**, **Project Name**, dan **Version**
-            4. Dapatkan **API Key** dari Settings
-            """)
-        else:
-            uploaded_file = st.file_uploader(
-                "📤 Upload Image (dengan koin di sudut)",
-                type=["jpg", "jpeg", "png"],
-                help="Upload gambar luka bakar dengan koin referensi"
-            )
-            
-            if uploaded_file is not None:
-                # Read image
-                file_bytes = np.asarray(bytearray(uploaded_file.read()), dtype=np.uint8)
-                image = cv2.imdecode(file_bytes, cv2.IMREAD_COLOR)
-                
-                col1, col2 = st.columns(2)
-                
-                with col1:
-                    st.subheader("📷 Original Image")
-                    st.image(cv2.cvtColor(image, cv2.COLOR_BGR2RGB), use_container_width=True)
-                    st.caption(f"File: {uploaded_file.name}")
-                    st.caption(f"Size: {image.shape[1]}x{image.shape[0]}")
-                
-                if st.button("🤖 Detect with Roboflow AI", type="primary", use_container_width=True):
-                    with st.spinner("🔄 Calling Roboflow API..."):
-                        
-                        # STEP 1: Call Roboflow API
-                        predictions = predict_with_roboflow(
-                            image,
-                            roboflow_api_key,
-                            roboflow_workspace,
-                            roboflow_project,
-                            roboflow_version,
-                            confidence_threshold
-                        )
-                        
-                        if predictions is None:
-                            st.error("❌ Failed to get predictions from Roboflow API")
-                        else:
-                            # Check if any predictions
-                            num_predictions = len(predictions.get('predictions', []))
-                            
-                            if num_predictions == 0:
-                                st.warning("⚠️ No burn wounds detected in the image")
-                                with col2:
-                                    st.info("🔍 Try:\n- Adjusting confidence threshold\n- Using better quality image\n- Checking if model is trained properly")
-                            else:
-                                st.success(f"✅ Detected {num_predictions} burn wound(s)!")
-                                
-                                # STEP 2: Create mask from predictions
-                                ai_mask = create_mask_from_roboflow(image, predictions)
-                                
-                                # STEP 3: Detect coin
-                                pixels_per_cm, coin_info = detect_coin_for_calibration(image, coin_diameter)
-                                
-                                # STEP 4: Calculate measurements
-                                area_info = calculate_wound_area(ai_mask, pixels_per_cm)
-                                
-                                if coin_info:
-                                    coin_area_cm2 = np.pi * (coin_info['diameter_cm'] / 2) ** 2
-                                    ratio_info = calculate_wound_ratio(area_info['area_cm2'], coin_area_cm2)
-                                else:
-                                    ratio_info = calculate_wound_ratio(area_info['area_cm2'])
-                                
-                                # STEP 5: Visualize predictions
-                                prediction_vis = visualize_roboflow_predictions(image, predictions)
-                                
-                                # STEP 6: Create final visualization
-                                result_img = create_visualization(image, ai_mask, coin_info, area_info, ratio_info)
-                                
-                                # Display results
-                                with col2:
-                                    st.subheader("🎯 AI Detections")
-                                    st.image(cv2.cvtColor(prediction_vis, cv2.COLOR_BGR2RGB), use_container_width=True)
-                                    st.caption(f"Detections: {num_predictions}")
-                                
-                                # Show intermediate steps
-                                if show_steps:
-                                    st.markdown("---")
-                                    st.subheader("🔬 Processing Steps")
-                                    
-                                    col_s1, col_s2 = st.columns(2)
-                                    with col_s1:
-                                        st.image(cv2.cvtColor(ai_mask, cv2.COLOR_GRAY2RGB), 
-                                                caption="Binary Mask from AI", 
-                                                use_container_width=True)
-                                    with col_s2:
-                                        # Show prediction details
-                                        st.markdown("**Prediction Details:**")
-                                        for i, pred in enumerate(predictions['predictions'][:3]):  # Show max 3
-                                            conf = pred.get('confidence', 0)
-                                            cls = pred.get('class', 'burn')
-                                            st.write(f"{i+1}. {cls}: {conf:.2%}")
-                                
-                                # Debug info
-                                if show_debug:
-                                    st.markdown("---")
-                                    with st.expander("🐛 Debug Info", expanded=True):
-                                        col_d1, col_d2, col_d3 = st.columns(3)
-                                        
-                                        with col_d1:
-                                            st.markdown("**Roboflow API:**")
-                                            st.write(f"✅ Connected")
-                                            st.write(f"Predictions: {num_predictions}")
-                                            st.write(f"Model: v{roboflow_version}")
-                                        
-                                        with col_d2:
-                                            st.markdown("**Coin Detection:**")
-                                            if coin_info:
-                                                st.write(f"✅ Detected")
-                                                st.write(f"Position: {'Corner ✅' if coin_info['in_corner'] else 'Center ⚠️'}")
-                                                st.write(f"**Pixels/cm: {coin_info['pixels_per_cm']:.2f}**")
-                                            else:
-                                                st.write(f"❌ Not detected")
-                                                st.write(f"Using default: 50")
-                                        
-                                        with col_d3:
-                                            st.markdown("**Mask Info:**")
-                                            st.write(f"Non-zero: {np.sum(ai_mask > 0):,}")
-                                            st.write(f"Coverage: {np.sum(ai_mask > 0)/ai_mask.size*100:.2f}%")
-                                            st.write(f"Method: Roboflow AI")
-                                
-                                # Results section
-                                st.markdown("---")
-                                st.subheader("📊 Measurement Visualization")
-                                st.image(cv2.cvtColor(result_img, cv2.COLOR_BGR2RGB), use_container_width=True)
-                                
-                                # Metrics
-                                st.markdown("---")
-                                col_m1, col_m2, col_m3, col_m4, col_m5 = st.columns(5)
-                                col_m1.metric("Area (cm²)", f"{area_info['area_cm2']}")
-                                col_m2.metric("Perimeter (cm)", f"{area_info['perimeter_cm']}")
-                                col_m3.metric("Width (cm)", f"{area_info['width_cm']}")
-                                col_m4.metric("Height (cm)", f"{area_info['height_cm']}")
-                                col_m5.metric("Ratio", f"{ratio_info['ratio']}x")
-                                
-                                # Export
-                                st.markdown("---")
-                                st.subheader("💾 Export")
-                                col_e1, col_e2, col_e3 = st.columns(3)
-                                
-                                with col_e1:
-                                    st.markdown(get_image_download_link(result_img, "roboflow_result.png"), unsafe_allow_html=True)
-                                
-                                with col_e2:
-                                    if export_json:
-                                        result_json = {
-                                            'filename': uploaded_file.name,
-                                            'method': 'Roboflow AI',
-                                            'model_version': roboflow_version,
-                                            'num_detections': num_predictions,
-                                            'timestamp': datetime.now().isoformat(),
-                                            'predictions': predictions,
-                                            'coin_info': coin_info,
-                                            'area_info': area_info,
-                                            'ratio_info': ratio_info
-                                        }
-                                        st.download_button("Download JSON", json.dumps(result_json, indent=2), "roboflow_result.json", "application/json")
-                                
-                                with col_e3:
-                                    if export_csv:
-                                        csv_data = pd.DataFrame([{
-                                            'filename': uploaded_file.name,
-                                            'method': 'Roboflow AI',
-                                            'model_version': roboflow_version,
-                                            'detections': num_predictions,
-                                            'area_cm2': area_info['area_cm2'],
-                                            'perimeter_cm': area_info['perimeter_cm'],
-                                            'width_cm': area_info['width_cm'],
-                                            'height_cm': area_info['height_cm'],
-                                            'pixels_per_cm': area_info['pixels_per_cm']
-                                        }])
-                                        st.download_button("Download CSV", csv_data.to_csv(index=False), "roboflow_result.csv", "text/csv")
 
 
 if __name__ == "__main__":
