@@ -1,0 +1,3 @@
+Method: binary_hsv
+Reason: No coin detected; Mask too large (84.4% of image)
+Quality Score: 50.0

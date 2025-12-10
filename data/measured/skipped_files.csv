@@ -1,0 +1,1011 @@
+filename,method,skipped,skip_reason,quality_score
+burn_0119_brightness_increase.jpg,binary_gray,True,No coin detected,75.0
+burn_0104_horizontal_flip.jpg,binary_gray,True,Mask too large (84.2% of image); Image too bright (brightness: 226.7),57.5
+burn_0104_vertical_flip.jpg,binary_gray,True,Mask too large (84.2% of image); Image too bright (brightness: 226.7),57.5
+burn_0104_rotation_90.jpg,binary_gray,True,Mask too large (84.2% of image); Image too bright (brightness: 226.7),57.5
+burn_0104_brightness_increase.jpg,binary_gray,True,Mask too large (85.7% of image); Image too bright (brightness: 230.3),57.5
+burn_0035_brightness_increase.jpg,binary_gray,True,No coin detected,75.0
+burn_0130_horizontal_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0130_vertical_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0130_rotation_90.jpg,binary_gray,True,No coin detected,75.0
+burn_0130_brightness_decrease.jpg,binary_gray,True,No coin detected,75.0
+burn_0181_vertical_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0181_brightness_increase.jpg,binary_gray,True,No coin detected,75.0
+burn_0181_brightness_decrease.jpg,binary_gray,True,No coin detected,75.0
+burn_0108_brightness_increase.jpg,binary_gray,True,No coin detected,75.0
+burn_0042_horizontal_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0042_vertical_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0042_rotation_90.jpg,binary_gray,True,No coin detected,75.0
+burn_0042_brightness_increase.jpg,binary_gray,True,No coin detected,75.0
+burn_0100_horizontal_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0100_vertical_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0100_brightness_increase.jpg,binary_gray,True,No coin detected,75.0
+burn_0180_horizontal_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0180_vertical_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0180_brightness_decrease.jpg,binary_gray,True,No coin detected,75.0
+burn_0174_horizontal_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0174_vertical_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0174_rotation_90.jpg,binary_gray,True,No coin detected,75.0
+burn_0174_brightness_increase.jpg,binary_gray,True,No coin detected; Mask too large (87.9% of image),50.0
+burn_0162_horizontal_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0162_vertical_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0162_rotation_90.jpg,binary_gray,True,No coin detected,75.0
+burn_0072_rotation_90.jpg,binary_gray,True,No coin detected,75.0
+burn_0072_brightness_increase.jpg,binary_gray,True,No coin detected,75.0
+burn_0072_brightness_decrease.jpg,binary_gray,True,No coin detected,75.0
+burn_0145_horizontal_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0145_vertical_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0145_rotation_90.jpg,binary_gray,True,No coin detected,75.0
+burn_0145_brightness_increase.jpg,binary_gray,True,No coin detected,75.0
+burn_0155_horizontal_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0155_vertical_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0155_rotation_90.jpg,binary_gray,True,No coin detected,75.0
+burn_0155_brightness_increase.jpg,binary_gray,True,No coin detected,75.0
+burn_0155_brightness_decrease.jpg,binary_gray,True,No coin detected,75.0
+burn_0141_horizontal_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0141_vertical_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0141_rotation_90.jpg,binary_gray,True,No coin detected,75.0
+burn_0141_brightness_increase.jpg,binary_gray,True,No coin detected,75.0
+burn_0141_brightness_decrease.jpg,binary_gray,True,No coin detected,75.0
+burn_0171_horizontal_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0171_vertical_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0171_rotation_90.jpg,binary_gray,True,No coin detected,75.0
+burn_0171_brightness_increase.jpg,binary_gray,True,No coin detected,75.0
+burn_0171_brightness_decrease.jpg,binary_gray,True,No coin detected,75.0
+burn_0090_horizontal_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0090_vertical_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0090_rotation_90.jpg,binary_gray,True,No coin detected,75.0
+burn_0090_brightness_increase.jpg,binary_gray,True,No coin detected,75.0
+burn_0090_brightness_decrease.jpg,binary_gray,True,No coin detected,75.0
+burn_0008_horizontal_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0008_vertical_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0008_rotation_90.jpg,binary_gray,True,No coin detected,75.0
+burn_0008_brightness_increase.jpg,binary_gray,True,No coin detected; Mask too large (84.4% of image),50.0
+burn_0089_horizontal_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0089_vertical_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0089_rotation_90.jpg,binary_gray,True,No coin detected,75.0
+burn_0089_brightness_increase.jpg,binary_gray,True,No coin detected,75.0
+burn_0089_brightness_decrease.jpg,binary_gray,True,No coin detected,75.0
+burn_0015_horizontal_flip.jpg,binary_gray,True,Mask too large (84.1% of image); Image too bright (brightness: 231.7),57.5
+burn_0015_vertical_flip.jpg,binary_gray,True,Mask too large (84.1% of image); Image too bright (brightness: 231.7),57.5
+burn_0015_rotation_90.jpg,binary_gray,True,Mask too large (84.1% of image); Image too bright (brightness: 231.7),57.5
+burn_0015_brightness_increase.jpg,binary_gray,True,Mask too large (85.0% of image); Image too bright (brightness: 235.8),57.5
+burn_0031_vertical_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0031_brightness_increase.jpg,binary_gray,True,No coin detected,75.0
+burn_0031_brightness_decrease.jpg,binary_gray,True,No coin detected,75.0
+burn_0120_horizontal_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0120_vertical_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0120_rotation_90.jpg,binary_gray,True,No coin detected,75.0
+burn_0163_horizontal_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0163_vertical_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0163_rotation_90.jpg,binary_gray,True,No coin detected,75.0
+burn_0163_brightness_increase.jpg,binary_gray,True,No coin detected,75.0
+burn_0024_horizontal_flip.jpg,binary_gray,True,No coin detected; Mask too large (95.6% of image),50.0
+burn_0024_vertical_flip.jpg,binary_gray,True,No coin detected; Mask too large (95.6% of image),50.0
+burn_0024_rotation_90.jpg,binary_gray,True,No coin detected; Mask too large (95.6% of image),50.0
+burn_0024_brightness_increase.jpg,binary_gray,True,No coin detected; Mask too large (95.6% of image),50.0
+burn_0024_brightness_decrease.jpg,binary_gray,True,No coin detected; Mask too large (95.5% of image),50.0
+burn_0176_brightness_increase.jpg,binary_gray,True,No coin detected,75.0
+burn_0176_brightness_decrease.jpg,binary_gray,True,No coin detected,75.0
+burn_0177_horizontal_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0177_rotation_90.jpg,binary_gray,True,No coin detected,75.0
+burn_0177_brightness_increase.jpg,binary_gray,True,No coin detected,75.0
+burn_0140_brightness_increase.jpg,binary_gray,True,Mask too large (82.1% of image); Image too bright (brightness: 232.7),57.5
+burn_0097_horizontal_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0097_vertical_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0097_rotation_90.jpg,binary_gray,True,No coin detected,75.0
+burn_0097_brightness_increase.jpg,binary_gray,True,No coin detected,75.0
+burn_0097_brightness_decrease.jpg,binary_gray,True,No coin detected,75.0
+burn_0107_horizontal_flip.jpg,binary_gray,True,No coin detected; Mask too large (87.2% of image),50.0
+burn_0107_vertical_flip.jpg,binary_gray,True,No coin detected; Mask too large (87.2% of image),50.0
+burn_0107_rotation_90.jpg,binary_gray,True,No coin detected; Mask too large (87.2% of image),50.0
+burn_0107_brightness_decrease.jpg,binary_gray,True,No coin detected; Mask too large (87.3% of image),50.0
+burn_0028_vertical_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0028_brightness_decrease.jpg,binary_gray,True,No coin detected,75.0
+burn_0126_horizontal_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0126_vertical_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0126_rotation_90.jpg,binary_gray,True,No coin detected,75.0
+burn_0149_horizontal_flip.jpg,binary_gray,True,No coin detected; Mask too large (80.3% of image),50.0
+burn_0149_vertical_flip.jpg,binary_gray,True,No coin detected; Mask too large (80.3% of image),50.0
+burn_0149_rotation_90.jpg,binary_gray,True,No coin detected; Mask too large (80.3% of image),50.0
+burn_0058_brightness_decrease.jpg,binary_gray,True,No coin detected,75.0
+burn_0074_rotation_90.jpg,binary_gray,True,No coin detected,75.0
+burn_0074_brightness_increase.jpg,binary_gray,True,No coin detected,75.0
+burn_0074_brightness_decrease.jpg,binary_gray,True,No coin detected,75.0
+burn_0095_horizontal_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0095_brightness_decrease.jpg,binary_gray,True,No coin detected,75.0
+burn_0023_brightness_increase.jpg,binary_gray,True,No coin detected,75.0
+burn_0027_horizontal_flip.jpg,binary_gray,True,No coin detected; Mask too large (96.5% of image),50.0
+burn_0027_vertical_flip.jpg,binary_gray,True,No coin detected; Mask too large (96.5% of image),50.0
+burn_0027_rotation_90.jpg,binary_gray,True,No coin detected; Mask too large (96.5% of image),50.0
+burn_0144_horizontal_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0144_vertical_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0144_brightness_increase.jpg,binary_gray,True,No coin detected,75.0
+burn_0144_brightness_decrease.jpg,binary_gray,True,No coin detected,75.0
+burn_0153_brightness_decrease.jpg,binary_gray,True,No coin detected,75.0
+burn_0011_horizontal_flip.jpg,binary_gray,True,No coin detected; Mask too large (90.5% of image),50.0
+burn_0011_vertical_flip.jpg,binary_gray,True,No coin detected; Mask too large (90.5% of image),50.0
+burn_0011_rotation_90.jpg,binary_gray,True,No coin detected; Mask too large (90.6% of image),50.0
+burn_0011_brightness_increase.jpg,binary_gray,True,No coin detected; Mask too large (95.3% of image),50.0
+burn_0067_horizontal_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0067_rotation_90.jpg,binary_gray,True,No coin detected,75.0
+burn_0172_vertical_flip.jpg,binary_gray,True,No coin detected; Mask too large (83.0% of image),50.0
+burn_0172_rotation_90.jpg,binary_gray,True,No coin detected; Mask too large (83.0% of image),50.0
+burn_0105_vertical_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0025_brightness_increase.jpg,binary_gray,True,No coin detected,75.0
+burn_0184_horizontal_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0184_vertical_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0184_rotation_90.jpg,binary_gray,True,No coin detected,75.0
+burn_0184_brightness_increase.jpg,binary_gray,True,No coin detected,75.0
+burn_0184_brightness_decrease.jpg,binary_gray,True,No coin detected,75.0
+burn_0160_horizontal_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0160_vertical_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0160_rotation_90.jpg,binary_gray,True,No coin detected,75.0
+burn_0160_brightness_increase.jpg,binary_gray,True,No coin detected,75.0
+burn_0160_brightness_decrease.jpg,binary_gray,True,No coin detected,75.0
+burn_0017_brightness_increase.jpg,binary_gray,True,No coin detected; Mask too large (89.8% of image),50.0
+burn_0121_horizontal_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0121_vertical_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0121_rotation_90.jpg,binary_gray,True,No coin detected,75.0
+burn_0121_brightness_increase.jpg,binary_gray,True,No coin detected,75.0
+burn_0091_horizontal_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0091_rotation_90.jpg,binary_gray,True,No coin detected,75.0
+burn_0020_horizontal_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0020_vertical_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0020_rotation_90.jpg,binary_gray,True,No coin detected,75.0
+burn_0020_brightness_increase.jpg,binary_gray,True,No coin detected,75.0
+burn_0040_horizontal_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0040_vertical_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0040_rotation_90.jpg,binary_gray,True,No coin detected,75.0
+burn_0040_brightness_increase.jpg,binary_gray,True,No coin detected,75.0
+burn_0040_brightness_decrease.jpg,binary_gray,True,No coin detected,75.0
+burn_0169_horizontal_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0169_vertical_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0169_rotation_90.jpg,binary_gray,True,No coin detected,75.0
+burn_0054_horizontal_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0054_vertical_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0054_rotation_90.jpg,binary_gray,True,No coin detected,75.0
+burn_0054_brightness_increase.jpg,binary_gray,True,No coin detected,75.0
+burn_0115_horizontal_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0115_vertical_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0115_rotation_90.jpg,binary_gray,True,No coin detected,75.0
+burn_0115_brightness_increase.jpg,binary_gray,True,No coin detected,75.0
+burn_0115_brightness_decrease.jpg,binary_gray,True,No coin detected,75.0
+burn_0060_horizontal_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0060_vertical_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0060_rotation_90.jpg,binary_gray,True,No coin detected,75.0
+burn_0060_brightness_increase.jpg,binary_gray,True,No coin detected,75.0
+burn_0060_brightness_decrease.jpg,binary_gray,True,No coin detected,75.0
+burn_0135_horizontal_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0135_vertical_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0135_rotation_90.jpg,binary_gray,True,No coin detected,75.0
+burn_0135_brightness_increase.jpg,binary_gray,True,No coin detected,75.0
+burn_0135_brightness_decrease.jpg,binary_gray,True,No coin detected,75.0
+burn_0168_vertical_flip.jpg,binary_gray,True,No coin detected; Mask too large (92.7% of image),50.0
+burn_0168_rotation_90.jpg,binary_gray,True,No coin detected; Mask too large (92.6% of image),50.0
+burn_0168_brightness_increase.jpg,binary_gray,True,No coin detected; Mask too large (92.9% of image),50.0
+burn_0168_brightness_decrease.jpg,binary_gray,True,No coin detected; Mask too large (92.7% of image),50.0
+burn_0063_horizontal_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0063_vertical_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0063_rotation_90.jpg,binary_gray,True,No coin detected,75.0
+burn_0063_brightness_decrease.jpg,binary_gray,True,No coin detected,75.0
+burn_0004_brightness_decrease.jpg,binary_gray,True,No coin detected,75.0
+burn_0036_horizontal_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0036_vertical_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0036_rotation_90.jpg,binary_gray,True,No coin detected,75.0
+burn_0036_brightness_increase.jpg,binary_gray,True,No coin detected,75.0
+burn_0158_horizontal_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0158_vertical_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0158_rotation_90.jpg,binary_gray,True,No coin detected,75.0
+burn_0087_horizontal_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0087_vertical_flip.jpg,binary_gray,True,No coin detected,75.0
+burn_0087_rotation_90.jpg,binary_gray,True,No coin detected,75.0
+burn_0087_brightness_decrease.jpg,binary_gray,True,No coin detected,75.0
+burn_0019_brightness_increase.jpg,binary_gray,True,No coin detected,75.0
+burn_0128_horizontal_flip.jpg,binary_gray,True,No coin detected; Image too bright (brightness: 231.1),57.5
+burn_0128_vertical_flip.jpg,binary_gray,True,No coin detected; Image too bright (brightness: 231.1),57.5
+burn_0128_rotation_90.jpg,binary_gray,True,No coin detected; Image too bright (brightness: 231.1),57.5
+burn_0128_brightness_increase.jpg,binary_gray,True,No coin detected; Image too bright (brightness: 238.7),57.5
+burn_0029_brightness_increase.jpg,binary_gray,True,No coin detected,75.0
+burn_0029_brightness_decrease.jpg,binary_gray,True,No coin detected,75.0
+burn_0119_brightness_increase.jpg,binary_hsv,True,No coin detected; Mask too large (81.6% of image),50.0
+burn_0035_brightness_increase.jpg,binary_hsv,True,No coin detected,75.0
+burn_0130_horizontal_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0130_vertical_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0130_rotation_90.jpg,binary_hsv,True,No coin detected,75.0
+burn_0130_brightness_decrease.jpg,binary_hsv,True,No coin detected,75.0
+burn_0181_vertical_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0181_brightness_increase.jpg,binary_hsv,True,No coin detected,75.0
+burn_0181_brightness_decrease.jpg,binary_hsv,True,No coin detected,75.0
+burn_0108_brightness_increase.jpg,binary_hsv,True,No coin detected,75.0
+burn_0042_horizontal_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0042_vertical_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0042_rotation_90.jpg,binary_hsv,True,No coin detected,75.0
+burn_0042_brightness_increase.jpg,binary_hsv,True,No coin detected,75.0
+burn_0100_horizontal_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0100_vertical_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0100_brightness_increase.jpg,binary_hsv,True,No coin detected,75.0
+burn_0180_horizontal_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0180_vertical_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0180_brightness_decrease.jpg,binary_hsv,True,No coin detected,75.0
+burn_0174_horizontal_flip.jpg,binary_hsv,True,No coin detected; Mask too large (84.4% of image),50.0
+burn_0174_vertical_flip.jpg,binary_hsv,True,No coin detected; Mask too large (84.4% of image),50.0
+burn_0174_rotation_90.jpg,binary_hsv,True,No coin detected; Mask too large (84.4% of image),50.0
+burn_0174_brightness_increase.jpg,binary_hsv,True,No coin detected; Mask too large (85.6% of image),50.0
+burn_0162_horizontal_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0162_vertical_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0162_rotation_90.jpg,binary_hsv,True,No coin detected,75.0
+burn_0072_rotation_90.jpg,binary_hsv,True,No coin detected,75.0
+burn_0072_brightness_increase.jpg,binary_hsv,True,No coin detected,75.0
+burn_0072_brightness_decrease.jpg,binary_hsv,True,No coin detected,75.0
+burn_0097_brightness_decrease.jpg,binary_hsv,True,No coin detected,75.0
+burn_0145_horizontal_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0145_vertical_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0145_rotation_90.jpg,binary_hsv,True,No coin detected,75.0
+burn_0145_brightness_increase.jpg,binary_hsv,True,No coin detected,75.0
+burn_0155_horizontal_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0155_vertical_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0155_rotation_90.jpg,binary_hsv,True,No coin detected,75.0
+burn_0155_brightness_increase.jpg,binary_hsv,True,No coin detected,75.0
+burn_0155_brightness_decrease.jpg,binary_hsv,True,No coin detected,75.0
+burn_0141_horizontal_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0141_vertical_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0141_rotation_90.jpg,binary_hsv,True,No coin detected,75.0
+burn_0141_brightness_increase.jpg,binary_hsv,True,No coin detected,75.0
+burn_0141_brightness_decrease.jpg,binary_hsv,True,No coin detected,75.0
+burn_0171_horizontal_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0171_vertical_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0171_rotation_90.jpg,binary_hsv,True,No coin detected,75.0
+burn_0171_brightness_increase.jpg,binary_hsv,True,No coin detected,75.0
+burn_0171_brightness_decrease.jpg,binary_hsv,True,No coin detected,75.0
+burn_0090_horizontal_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0090_vertical_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0090_rotation_90.jpg,binary_hsv,True,No coin detected,75.0
+burn_0090_brightness_increase.jpg,binary_hsv,True,No coin detected,75.0
+burn_0090_brightness_decrease.jpg,binary_hsv,True,No coin detected,75.0
+burn_0008_horizontal_flip.jpg,binary_hsv,True,No coin detected; Mask too large (80.2% of image),50.0
+burn_0008_vertical_flip.jpg,binary_hsv,True,No coin detected; Mask too large (80.1% of image),50.0
+burn_0008_rotation_90.jpg,binary_hsv,True,No coin detected; Mask too large (80.2% of image),50.0
+burn_0008_brightness_increase.jpg,binary_hsv,True,No coin detected; Mask too large (83.7% of image),50.0
+burn_0089_horizontal_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0089_vertical_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0089_rotation_90.jpg,binary_hsv,True,No coin detected,75.0
+burn_0089_brightness_increase.jpg,binary_hsv,True,No coin detected,75.0
+burn_0089_brightness_decrease.jpg,binary_hsv,True,No coin detected,75.0
+burn_0031_vertical_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0031_brightness_increase.jpg,binary_hsv,True,No coin detected,75.0
+burn_0031_brightness_decrease.jpg,binary_hsv,True,No coin detected,75.0
+burn_0120_horizontal_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0120_vertical_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0120_rotation_90.jpg,binary_hsv,True,No coin detected,75.0
+burn_0163_horizontal_flip.jpg,binary_hsv,True,No coin detected; Mask too large (99.5% of image),50.0
+burn_0163_vertical_flip.jpg,binary_hsv,True,No coin detected; Mask too large (99.5% of image),50.0
+burn_0163_rotation_90.jpg,binary_hsv,True,No coin detected; Mask too large (99.5% of image),50.0
+burn_0163_brightness_increase.jpg,binary_hsv,True,No coin detected; Mask too large (99.5% of image),50.0
+burn_0024_horizontal_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0024_vertical_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0024_rotation_90.jpg,binary_hsv,True,No coin detected,75.0
+burn_0024_brightness_increase.jpg,binary_hsv,True,No coin detected,75.0
+burn_0024_brightness_decrease.jpg,binary_hsv,True,No coin detected,75.0
+burn_0176_brightness_increase.jpg,binary_hsv,True,No coin detected,75.0
+burn_0176_brightness_decrease.jpg,binary_hsv,True,No coin detected,75.0
+burn_0177_horizontal_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0177_rotation_90.jpg,binary_hsv,True,No coin detected,75.0
+burn_0177_brightness_increase.jpg,binary_hsv,True,No coin detected; Mask too large (83.1% of image),50.0
+burn_0097_horizontal_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0097_vertical_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0097_rotation_90.jpg,binary_hsv,True,No coin detected,75.0
+burn_0097_brightness_increase.jpg,binary_hsv,True,No coin detected,75.0
+burn_0107_horizontal_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0107_vertical_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0107_rotation_90.jpg,binary_hsv,True,No coin detected,75.0
+burn_0107_brightness_decrease.jpg,binary_hsv,True,No coin detected,75.0
+burn_0028_vertical_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0028_brightness_decrease.jpg,binary_hsv,True,No coin detected,75.0
+burn_0126_horizontal_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0126_vertical_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0126_rotation_90.jpg,binary_hsv,True,No coin detected,75.0
+burn_0149_horizontal_flip.jpg,binary_hsv,True,No coin detected; Mask too large (84.6% of image),50.0
+burn_0149_vertical_flip.jpg,binary_hsv,True,No coin detected; Mask too large (84.6% of image),50.0
+burn_0149_rotation_90.jpg,binary_hsv,True,No coin detected; Mask too large (84.5% of image),50.0
+burn_0058_brightness_decrease.jpg,binary_hsv,True,No coin detected,75.0
+burn_0074_rotation_90.jpg,binary_hsv,True,No coin detected,75.0
+burn_0074_brightness_increase.jpg,binary_hsv,True,No coin detected,75.0
+burn_0074_brightness_decrease.jpg,binary_hsv,True,No coin detected,75.0
+burn_0095_horizontal_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0095_brightness_decrease.jpg,binary_hsv,True,No coin detected,75.0
+burn_0023_brightness_increase.jpg,binary_hsv,True,No coin detected,75.0
+burn_0027_horizontal_flip.jpg,binary_hsv,True,No coin detected; Mask too large (94.2% of image),50.0
+burn_0027_vertical_flip.jpg,binary_hsv,True,No coin detected; Mask too large (94.2% of image),50.0
+burn_0027_rotation_90.jpg,binary_hsv,True,No coin detected; Mask too large (94.2% of image),50.0
+burn_0144_horizontal_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0144_vertical_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0144_brightness_increase.jpg,binary_hsv,True,No coin detected,75.0
+burn_0144_brightness_decrease.jpg,binary_hsv,True,No coin detected,75.0
+burn_0153_brightness_decrease.jpg,binary_hsv,True,No coin detected,75.0
+burn_0011_horizontal_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0011_vertical_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0011_rotation_90.jpg,binary_hsv,True,No coin detected,75.0
+burn_0011_brightness_increase.jpg,binary_hsv,True,No coin detected,75.0
+burn_0067_horizontal_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0067_rotation_90.jpg,binary_hsv,True,No coin detected,75.0
+burn_0172_vertical_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0172_rotation_90.jpg,binary_hsv,True,No coin detected,75.0
+burn_0105_vertical_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0025_brightness_increase.jpg,binary_hsv,True,No coin detected,75.0
+burn_0184_horizontal_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0184_vertical_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0184_rotation_90.jpg,binary_hsv,True,No coin detected,75.0
+burn_0184_brightness_increase.jpg,binary_hsv,True,No coin detected,75.0
+burn_0184_brightness_decrease.jpg,binary_hsv,True,No coin detected,75.0
+burn_0160_horizontal_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0160_vertical_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0160_rotation_90.jpg,binary_hsv,True,No coin detected,75.0
+burn_0160_brightness_increase.jpg,binary_hsv,True,No coin detected,75.0
+burn_0160_brightness_decrease.jpg,binary_hsv,True,No coin detected,75.0
+burn_0017_brightness_increase.jpg,binary_hsv,True,No coin detected; Mask too large (91.2% of image),50.0
+burn_0121_horizontal_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0121_vertical_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0121_rotation_90.jpg,binary_hsv,True,No coin detected,75.0
+burn_0121_brightness_increase.jpg,binary_hsv,True,No coin detected,75.0
+burn_0091_horizontal_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0091_rotation_90.jpg,binary_hsv,True,No coin detected,75.0
+burn_0020_horizontal_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0020_vertical_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0020_rotation_90.jpg,binary_hsv,True,No coin detected,75.0
+burn_0020_brightness_increase.jpg,binary_hsv,True,No coin detected,75.0
+burn_0040_horizontal_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0040_vertical_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0040_rotation_90.jpg,binary_hsv,True,No coin detected,75.0
+burn_0040_brightness_increase.jpg,binary_hsv,True,No coin detected,75.0
+burn_0040_brightness_decrease.jpg,binary_hsv,True,No coin detected,75.0
+burn_0169_horizontal_flip.jpg,binary_hsv,True,No coin detected; Mask too large (81.3% of image),50.0
+burn_0169_vertical_flip.jpg,binary_hsv,True,No coin detected; Mask too large (81.3% of image),50.0
+burn_0169_rotation_90.jpg,binary_hsv,True,No coin detected; Mask too large (81.3% of image),50.0
+burn_0054_horizontal_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0054_vertical_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0054_rotation_90.jpg,binary_hsv,True,No coin detected,75.0
+burn_0054_brightness_increase.jpg,binary_hsv,True,No coin detected,75.0
+burn_0115_horizontal_flip.jpg,binary_hsv,True,No coin detected; Mask too large (99.3% of image),50.0
+burn_0115_vertical_flip.jpg,binary_hsv,True,No coin detected; Mask too large (99.3% of image),50.0
+burn_0115_rotation_90.jpg,binary_hsv,True,No coin detected; Mask too large (99.2% of image),50.0
+burn_0115_brightness_increase.jpg,binary_hsv,True,No coin detected; Mask too large (99.2% of image),50.0
+burn_0115_brightness_decrease.jpg,binary_hsv,True,No coin detected; Mask too large (99.2% of image),50.0
+burn_0060_horizontal_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0060_vertical_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0060_rotation_90.jpg,binary_hsv,True,No coin detected,75.0
+burn_0060_brightness_increase.jpg,binary_hsv,True,No coin detected,75.0
+burn_0060_brightness_decrease.jpg,binary_hsv,True,No coin detected,75.0
+burn_0135_horizontal_flip.jpg,binary_hsv,True,No coin detected; Mask too large (99.3% of image),50.0
+burn_0135_vertical_flip.jpg,binary_hsv,True,No coin detected; Mask too large (99.3% of image),50.0
+burn_0135_rotation_90.jpg,binary_hsv,True,No coin detected; Mask too large (99.3% of image),50.0
+burn_0135_brightness_increase.jpg,binary_hsv,True,No coin detected; Mask too large (99.3% of image),50.0
+burn_0135_brightness_decrease.jpg,binary_hsv,True,No coin detected; Mask too large (99.3% of image),50.0
+burn_0168_vertical_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0168_rotation_90.jpg,binary_hsv,True,No coin detected,75.0
+burn_0168_brightness_increase.jpg,binary_hsv,True,No coin detected,75.0
+burn_0168_brightness_decrease.jpg,binary_hsv,True,No coin detected,75.0
+burn_0063_horizontal_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0063_vertical_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0063_rotation_90.jpg,binary_hsv,True,No coin detected,75.0
+burn_0063_brightness_decrease.jpg,binary_hsv,True,No coin detected,75.0
+burn_0004_brightness_decrease.jpg,binary_hsv,True,No coin detected,75.0
+burn_0036_horizontal_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0036_vertical_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0036_rotation_90.jpg,binary_hsv,True,No coin detected,75.0
+burn_0036_brightness_increase.jpg,binary_hsv,True,No coin detected,75.0
+burn_0158_horizontal_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0158_vertical_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0158_rotation_90.jpg,binary_hsv,True,No coin detected,75.0
+burn_0087_horizontal_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0087_vertical_flip.jpg,binary_hsv,True,No coin detected,75.0
+burn_0087_rotation_90.jpg,binary_hsv,True,No coin detected,75.0
+burn_0087_brightness_decrease.jpg,binary_hsv,True,No coin detected,75.0
+burn_0019_brightness_increase.jpg,binary_hsv,True,No coin detected,75.0
+burn_0128_horizontal_flip.jpg,binary_hsv,True,No coin detected; Image too bright (brightness: 231.1),57.5
+burn_0128_vertical_flip.jpg,binary_hsv,True,No coin detected; Image too bright (brightness: 231.1),57.5
+burn_0128_rotation_90.jpg,binary_hsv,True,No coin detected; Image too bright (brightness: 231.1),57.5
+burn_0128_brightness_increase.jpg,binary_hsv,True,No coin detected; Image too bright (brightness: 238.7),57.5
+burn_0029_brightness_increase.jpg,binary_hsv,True,No coin detected,75.0
+burn_0029_brightness_decrease.jpg,binary_hsv,True,No coin detected,75.0
+burn_0119_brightness_increase.jpg,opening,True,No coin detected; Mask too large (81.1% of image),50.0
+burn_0035_brightness_increase.jpg,opening,True,No coin detected,75.0
+burn_0130_horizontal_flip.jpg,opening,True,No coin detected,75.0
+burn_0130_vertical_flip.jpg,opening,True,No coin detected,75.0
+burn_0130_rotation_90.jpg,opening,True,No coin detected,75.0
+burn_0130_brightness_decrease.jpg,opening,True,No coin detected,75.0
+burn_0181_vertical_flip.jpg,opening,True,No coin detected,75.0
+burn_0181_brightness_increase.jpg,opening,True,No coin detected,75.0
+burn_0181_brightness_decrease.jpg,opening,True,No coin detected,75.0
+burn_0108_brightness_increase.jpg,opening,True,No coin detected,75.0
+burn_0042_horizontal_flip.jpg,opening,True,No coin detected,75.0
+burn_0042_vertical_flip.jpg,opening,True,No coin detected,75.0
+burn_0042_rotation_90.jpg,opening,True,No coin detected,75.0
+burn_0042_brightness_increase.jpg,opening,True,No coin detected,75.0
+burn_0100_horizontal_flip.jpg,opening,True,No coin detected,75.0
+burn_0100_vertical_flip.jpg,opening,True,No coin detected,75.0
+burn_0100_brightness_increase.jpg,opening,True,No coin detected,75.0
+burn_0180_horizontal_flip.jpg,opening,True,No coin detected,75.0
+burn_0180_vertical_flip.jpg,opening,True,No coin detected,75.0
+burn_0180_brightness_decrease.jpg,opening,True,No coin detected,75.0
+burn_0174_horizontal_flip.jpg,opening,True,No coin detected; Mask too large (83.9% of image),50.0
+burn_0174_vertical_flip.jpg,opening,True,No coin detected; Mask too large (84.0% of image),50.0
+burn_0174_rotation_90.jpg,opening,True,No coin detected; Mask too large (83.9% of image),50.0
+burn_0174_brightness_increase.jpg,opening,True,No coin detected; Mask too large (85.1% of image),50.0
+burn_0162_horizontal_flip.jpg,opening,True,No coin detected,75.0
+burn_0162_vertical_flip.jpg,opening,True,No coin detected,75.0
+burn_0162_rotation_90.jpg,opening,True,No coin detected,75.0
+burn_0072_rotation_90.jpg,opening,True,No coin detected,75.0
+burn_0072_brightness_increase.jpg,opening,True,No coin detected,75.0
+burn_0072_brightness_decrease.jpg,opening,True,No coin detected,75.0
+burn_0097_brightness_decrease.jpg,opening,True,No coin detected,75.0
+burn_0145_horizontal_flip.jpg,opening,True,No coin detected,75.0
+burn_0145_vertical_flip.jpg,opening,True,No coin detected,75.0
+burn_0145_rotation_90.jpg,opening,True,No coin detected,75.0
+burn_0145_brightness_increase.jpg,opening,True,No coin detected,75.0
+burn_0155_horizontal_flip.jpg,opening,True,No coin detected,75.0
+burn_0155_vertical_flip.jpg,opening,True,No coin detected,75.0
+burn_0155_rotation_90.jpg,opening,True,No coin detected,75.0
+burn_0155_brightness_increase.jpg,opening,True,No coin detected,75.0
+burn_0155_brightness_decrease.jpg,opening,True,No coin detected,75.0
+burn_0141_horizontal_flip.jpg,opening,True,No coin detected,75.0
+burn_0141_vertical_flip.jpg,opening,True,No coin detected,75.0
+burn_0141_rotation_90.jpg,opening,True,No coin detected,75.0
+burn_0141_brightness_increase.jpg,opening,True,No coin detected,75.0
+burn_0141_brightness_decrease.jpg,opening,True,No coin detected,75.0
+burn_0171_horizontal_flip.jpg,opening,True,No coin detected,75.0
+burn_0171_vertical_flip.jpg,opening,True,No coin detected,75.0
+burn_0171_rotation_90.jpg,opening,True,No coin detected,75.0
+burn_0171_brightness_increase.jpg,opening,True,No coin detected,75.0
+burn_0171_brightness_decrease.jpg,opening,True,No coin detected,75.0
+burn_0090_horizontal_flip.jpg,opening,True,No coin detected,75.0
+burn_0090_vertical_flip.jpg,opening,True,No coin detected,75.0
+burn_0090_rotation_90.jpg,opening,True,No coin detected,75.0
+burn_0090_brightness_increase.jpg,opening,True,No coin detected,75.0
+burn_0090_brightness_decrease.jpg,opening,True,No coin detected,75.0
+burn_0008_horizontal_flip.jpg,opening,True,No coin detected,75.0
+burn_0008_vertical_flip.jpg,opening,True,No coin detected,75.0
+burn_0008_rotation_90.jpg,opening,True,No coin detected,75.0
+burn_0008_brightness_increase.jpg,opening,True,No coin detected; Mask too large (83.3% of image),50.0
+burn_0105_vertical_flip.jpg,opening,True,No coin detected,75.0
+burn_0089_horizontal_flip.jpg,opening,True,No coin detected,75.0
+burn_0089_vertical_flip.jpg,opening,True,No coin detected,75.0
+burn_0089_rotation_90.jpg,opening,True,No coin detected,75.0
+burn_0089_brightness_increase.jpg,opening,True,No coin detected,75.0
+burn_0089_brightness_decrease.jpg,opening,True,No coin detected,75.0
+burn_0031_vertical_flip.jpg,opening,True,No coin detected,75.0
+burn_0031_brightness_increase.jpg,opening,True,No coin detected,75.0
+burn_0031_brightness_decrease.jpg,opening,True,No coin detected,75.0
+burn_0120_horizontal_flip.jpg,opening,True,No coin detected,75.0
+burn_0120_vertical_flip.jpg,opening,True,No coin detected,75.0
+burn_0120_rotation_90.jpg,opening,True,No coin detected,75.0
+burn_0163_horizontal_flip.jpg,opening,True,No coin detected; Mask too large (99.3% of image),50.0
+burn_0163_vertical_flip.jpg,opening,True,No coin detected; Mask too large (99.3% of image),50.0
+burn_0163_rotation_90.jpg,opening,True,No coin detected; Mask too large (99.3% of image),50.0
+burn_0163_brightness_increase.jpg,opening,True,No coin detected; Mask too large (99.3% of image),50.0
+burn_0024_horizontal_flip.jpg,opening,True,No coin detected,75.0
+burn_0024_vertical_flip.jpg,opening,True,No coin detected,75.0
+burn_0024_rotation_90.jpg,opening,True,No coin detected,75.0
+burn_0024_brightness_increase.jpg,opening,True,No coin detected,75.0
+burn_0024_brightness_decrease.jpg,opening,True,No coin detected,75.0
+burn_0176_brightness_increase.jpg,opening,True,No coin detected,75.0
+burn_0176_brightness_decrease.jpg,opening,True,No coin detected,75.0
+burn_0177_horizontal_flip.jpg,opening,True,No coin detected,75.0
+burn_0177_rotation_90.jpg,opening,True,No coin detected,75.0
+burn_0177_brightness_increase.jpg,opening,True,No coin detected; Mask too large (82.8% of image),50.0
+burn_0097_horizontal_flip.jpg,opening,True,No coin detected,75.0
+burn_0097_vertical_flip.jpg,opening,True,No coin detected,75.0
+burn_0097_rotation_90.jpg,opening,True,No coin detected,75.0
+burn_0097_brightness_increase.jpg,opening,True,No coin detected,75.0
+burn_0107_horizontal_flip.jpg,opening,True,No coin detected,75.0
+burn_0107_vertical_flip.jpg,opening,True,No coin detected,75.0
+burn_0107_rotation_90.jpg,opening,True,No coin detected,75.0
+burn_0107_brightness_decrease.jpg,opening,True,No coin detected,75.0
+burn_0028_vertical_flip.jpg,opening,True,No coin detected,75.0
+burn_0028_brightness_decrease.jpg,opening,True,No coin detected,75.0
+burn_0126_horizontal_flip.jpg,opening,True,No coin detected,75.0
+burn_0126_vertical_flip.jpg,opening,True,No coin detected,75.0
+burn_0126_rotation_90.jpg,opening,True,No coin detected,75.0
+burn_0149_horizontal_flip.jpg,opening,True,No coin detected,75.0
+burn_0149_vertical_flip.jpg,opening,True,No coin detected,75.0
+burn_0149_rotation_90.jpg,opening,True,No coin detected,75.0
+burn_0058_brightness_decrease.jpg,opening,True,No coin detected,75.0
+burn_0074_rotation_90.jpg,opening,True,No coin detected,75.0
+burn_0074_brightness_increase.jpg,opening,True,No coin detected,75.0
+burn_0074_brightness_decrease.jpg,opening,True,No coin detected,75.0
+burn_0095_horizontal_flip.jpg,opening,True,No coin detected,75.0
+burn_0095_brightness_decrease.jpg,opening,True,No coin detected,75.0
+burn_0023_brightness_increase.jpg,opening,True,No coin detected,75.0
+burn_0027_horizontal_flip.jpg,opening,True,No coin detected; Mask too large (94.0% of image),50.0
+burn_0027_vertical_flip.jpg,opening,True,No coin detected; Mask too large (94.0% of image),50.0
+burn_0027_rotation_90.jpg,opening,True,No coin detected; Mask too large (94.0% of image),50.0
+burn_0144_horizontal_flip.jpg,opening,True,No coin detected,75.0
+burn_0144_vertical_flip.jpg,opening,True,No coin detected,75.0
+burn_0144_brightness_increase.jpg,opening,True,No coin detected,75.0
+burn_0144_brightness_decrease.jpg,opening,True,No coin detected,75.0
+burn_0153_brightness_decrease.jpg,opening,True,No coin detected,75.0
+burn_0011_horizontal_flip.jpg,opening,True,No coin detected,75.0
+burn_0011_vertical_flip.jpg,opening,True,No coin detected,75.0
+burn_0011_rotation_90.jpg,opening,True,No coin detected,75.0
+burn_0011_brightness_increase.jpg,opening,True,No coin detected,75.0
+burn_0067_horizontal_flip.jpg,opening,True,No coin detected,75.0
+burn_0067_rotation_90.jpg,opening,True,No coin detected,75.0
+burn_0172_vertical_flip.jpg,opening,True,No coin detected,75.0
+burn_0172_rotation_90.jpg,opening,True,No coin detected,75.0
+burn_0025_brightness_increase.jpg,opening,True,No coin detected,75.0
+burn_0184_horizontal_flip.jpg,opening,True,No coin detected,75.0
+burn_0184_vertical_flip.jpg,opening,True,No coin detected,75.0
+burn_0184_rotation_90.jpg,opening,True,No coin detected,75.0
+burn_0184_brightness_increase.jpg,opening,True,No coin detected,75.0
+burn_0184_brightness_decrease.jpg,opening,True,No coin detected,75.0
+burn_0160_horizontal_flip.jpg,opening,True,No coin detected,75.0
+burn_0160_vertical_flip.jpg,opening,True,No coin detected,75.0
+burn_0160_rotation_90.jpg,opening,True,No coin detected,75.0
+burn_0160_brightness_increase.jpg,opening,True,No coin detected,75.0
+burn_0160_brightness_decrease.jpg,opening,True,No coin detected,75.0
+burn_0017_brightness_increase.jpg,opening,True,No coin detected; Mask too large (91.0% of image),50.0
+burn_0121_horizontal_flip.jpg,opening,True,No coin detected,75.0
+burn_0121_vertical_flip.jpg,opening,True,No coin detected,75.0
+burn_0121_rotation_90.jpg,opening,True,No coin detected,75.0
+burn_0121_brightness_increase.jpg,opening,True,No coin detected,75.0
+burn_0091_horizontal_flip.jpg,opening,True,No coin detected,75.0
+burn_0091_rotation_90.jpg,opening,True,No coin detected,75.0
+burn_0020_horizontal_flip.jpg,opening,True,No coin detected,75.0
+burn_0020_vertical_flip.jpg,opening,True,No coin detected,75.0
+burn_0020_rotation_90.jpg,opening,True,No coin detected,75.0
+burn_0020_brightness_increase.jpg,opening,True,No coin detected,75.0
+burn_0040_horizontal_flip.jpg,opening,True,No coin detected,75.0
+burn_0040_vertical_flip.jpg,opening,True,No coin detected,75.0
+burn_0040_rotation_90.jpg,opening,True,No coin detected,75.0
+burn_0040_brightness_increase.jpg,opening,True,No coin detected,75.0
+burn_0040_brightness_decrease.jpg,opening,True,No coin detected,75.0
+burn_0169_horizontal_flip.jpg,opening,True,No coin detected; Mask too large (80.5% of image),50.0
+burn_0169_vertical_flip.jpg,opening,True,No coin detected; Mask too large (80.5% of image),50.0
+burn_0169_rotation_90.jpg,opening,True,No coin detected; Mask too large (80.4% of image),50.0
+burn_0054_horizontal_flip.jpg,opening,True,No coin detected,75.0
+burn_0054_vertical_flip.jpg,opening,True,No coin detected,75.0
+burn_0054_rotation_90.jpg,opening,True,No coin detected,75.0
+burn_0054_brightness_increase.jpg,opening,True,No coin detected,75.0
+burn_0115_horizontal_flip.jpg,opening,True,No coin detected; Mask too large (99.1% of image),50.0
+burn_0115_vertical_flip.jpg,opening,True,No coin detected; Mask too large (99.1% of image),50.0
+burn_0115_rotation_90.jpg,opening,True,No coin detected; Mask too large (99.1% of image),50.0
+burn_0115_brightness_increase.jpg,opening,True,No coin detected; Mask too large (99.1% of image),50.0
+burn_0115_brightness_decrease.jpg,opening,True,No coin detected; Mask too large (99.1% of image),50.0
+burn_0060_horizontal_flip.jpg,opening,True,No coin detected,75.0
+burn_0060_vertical_flip.jpg,opening,True,No coin detected,75.0
+burn_0060_rotation_90.jpg,opening,True,No coin detected,75.0
+burn_0060_brightness_increase.jpg,opening,True,No coin detected,75.0
+burn_0060_brightness_decrease.jpg,opening,True,No coin detected,75.0
+burn_0135_horizontal_flip.jpg,opening,True,No coin detected; Mask too large (99.2% of image),50.0
+burn_0135_vertical_flip.jpg,opening,True,No coin detected; Mask too large (99.2% of image),50.0
+burn_0135_rotation_90.jpg,opening,True,No coin detected; Mask too large (99.2% of image),50.0
+burn_0135_brightness_increase.jpg,opening,True,No coin detected; Mask too large (99.2% of image),50.0
+burn_0135_brightness_decrease.jpg,opening,True,No coin detected; Mask too large (99.2% of image),50.0
+burn_0168_vertical_flip.jpg,opening,True,No coin detected,75.0
+burn_0168_rotation_90.jpg,opening,True,No coin detected,75.0
+burn_0168_brightness_increase.jpg,opening,True,No coin detected,75.0
+burn_0168_brightness_decrease.jpg,opening,True,No coin detected,75.0
+burn_0063_horizontal_flip.jpg,opening,True,No coin detected,75.0
+burn_0063_vertical_flip.jpg,opening,True,No coin detected,75.0
+burn_0063_rotation_90.jpg,opening,True,No coin detected,75.0
+burn_0063_brightness_decrease.jpg,opening,True,No coin detected,75.0
+burn_0004_brightness_decrease.jpg,opening,True,No coin detected,75.0
+burn_0036_horizontal_flip.jpg,opening,True,No coin detected,75.0
+burn_0036_vertical_flip.jpg,opening,True,No coin detected,75.0
+burn_0036_rotation_90.jpg,opening,True,No coin detected,75.0
+burn_0036_brightness_increase.jpg,opening,True,No coin detected,75.0
+burn_0158_horizontal_flip.jpg,opening,True,No coin detected,75.0
+burn_0158_vertical_flip.jpg,opening,True,No coin detected,75.0
+burn_0158_rotation_90.jpg,opening,True,No coin detected,75.0
+burn_0087_horizontal_flip.jpg,opening,True,No coin detected,75.0
+burn_0087_vertical_flip.jpg,opening,True,No coin detected,75.0
+burn_0087_rotation_90.jpg,opening,True,No coin detected,75.0
+burn_0087_brightness_decrease.jpg,opening,True,No coin detected,75.0
+burn_0019_brightness_increase.jpg,opening,True,No coin detected,75.0
+burn_0128_horizontal_flip.jpg,opening,True,No coin detected; Image too bright (brightness: 231.1),57.5
+burn_0128_vertical_flip.jpg,opening,True,No coin detected; Image too bright (brightness: 231.1),57.5
+burn_0128_rotation_90.jpg,opening,True,No coin detected; Image too bright (brightness: 231.1),57.5
+burn_0128_brightness_increase.jpg,opening,True,No coin detected; Image too bright (brightness: 238.7),57.5
+burn_0029_brightness_increase.jpg,opening,True,No coin detected,75.0
+burn_0029_brightness_decrease.jpg,opening,True,No coin detected,75.0
+burn_0119_brightness_increase.jpg,closing,True,No coin detected; Mask too large (81.1% of image),50.0
+burn_0035_brightness_increase.jpg,closing,True,No coin detected,75.0
+burn_0130_horizontal_flip.jpg,closing,True,No coin detected,75.0
+burn_0130_vertical_flip.jpg,closing,True,No coin detected,75.0
+burn_0130_rotation_90.jpg,closing,True,No coin detected,75.0
+burn_0130_brightness_decrease.jpg,closing,True,No coin detected,75.0
+burn_0181_vertical_flip.jpg,closing,True,No coin detected,75.0
+burn_0181_brightness_increase.jpg,closing,True,No coin detected,75.0
+burn_0181_brightness_decrease.jpg,closing,True,No coin detected,75.0
+burn_0108_brightness_increase.jpg,closing,True,No coin detected,75.0
+burn_0042_horizontal_flip.jpg,closing,True,No coin detected,75.0
+burn_0042_vertical_flip.jpg,closing,True,No coin detected,75.0
+burn_0042_rotation_90.jpg,closing,True,No coin detected,75.0
+burn_0042_brightness_increase.jpg,closing,True,No coin detected,75.0
+burn_0100_horizontal_flip.jpg,closing,True,No coin detected,75.0
+burn_0100_vertical_flip.jpg,closing,True,No coin detected,75.0
+burn_0100_brightness_increase.jpg,closing,True,No coin detected,75.0
+burn_0180_horizontal_flip.jpg,closing,True,No coin detected,75.0
+burn_0180_vertical_flip.jpg,closing,True,No coin detected,75.0
+burn_0180_brightness_decrease.jpg,closing,True,No coin detected,75.0
+burn_0174_horizontal_flip.jpg,closing,True,No coin detected; Mask too large (84.1% of image),50.0
+burn_0174_vertical_flip.jpg,closing,True,No coin detected; Mask too large (84.1% of image),50.0
+burn_0174_rotation_90.jpg,closing,True,No coin detected; Mask too large (84.1% of image),50.0
+burn_0174_brightness_increase.jpg,closing,True,No coin detected; Mask too large (85.3% of image),50.0
+burn_0162_horizontal_flip.jpg,closing,True,No coin detected,75.0
+burn_0162_vertical_flip.jpg,closing,True,No coin detected,75.0
+burn_0162_rotation_90.jpg,closing,True,No coin detected,75.0
+burn_0072_rotation_90.jpg,closing,True,No coin detected,75.0
+burn_0072_brightness_increase.jpg,closing,True,No coin detected,75.0
+burn_0072_brightness_decrease.jpg,closing,True,No coin detected,75.0
+burn_0097_brightness_decrease.jpg,closing,True,No coin detected,75.0
+burn_0145_horizontal_flip.jpg,closing,True,No coin detected,75.0
+burn_0145_vertical_flip.jpg,closing,True,No coin detected,75.0
+burn_0145_rotation_90.jpg,closing,True,No coin detected,75.0
+burn_0145_brightness_increase.jpg,closing,True,No coin detected,75.0
+burn_0155_horizontal_flip.jpg,closing,True,No coin detected,75.0
+burn_0155_vertical_flip.jpg,closing,True,No coin detected,75.0
+burn_0155_rotation_90.jpg,closing,True,No coin detected,75.0
+burn_0155_brightness_increase.jpg,closing,True,No coin detected,75.0
+burn_0155_brightness_decrease.jpg,closing,True,No coin detected,75.0
+burn_0141_horizontal_flip.jpg,closing,True,No coin detected,75.0
+burn_0141_vertical_flip.jpg,closing,True,No coin detected,75.0
+burn_0141_rotation_90.jpg,closing,True,No coin detected,75.0
+burn_0141_brightness_increase.jpg,closing,True,No coin detected,75.0
+burn_0141_brightness_decrease.jpg,closing,True,No coin detected,75.0
+burn_0171_horizontal_flip.jpg,closing,True,No coin detected,75.0
+burn_0171_vertical_flip.jpg,closing,True,No coin detected,75.0
+burn_0171_rotation_90.jpg,closing,True,No coin detected,75.0
+burn_0171_brightness_increase.jpg,closing,True,No coin detected,75.0
+burn_0171_brightness_decrease.jpg,closing,True,No coin detected,75.0
+burn_0090_horizontal_flip.jpg,closing,True,No coin detected,75.0
+burn_0090_vertical_flip.jpg,closing,True,No coin detected,75.0
+burn_0090_rotation_90.jpg,closing,True,No coin detected,75.0
+burn_0090_brightness_increase.jpg,closing,True,No coin detected,75.0
+burn_0090_brightness_decrease.jpg,closing,True,No coin detected,75.0
+burn_0008_horizontal_flip.jpg,closing,True,No coin detected,75.0
+burn_0008_vertical_flip.jpg,closing,True,No coin detected,75.0
+burn_0008_rotation_90.jpg,closing,True,No coin detected,75.0
+burn_0008_brightness_increase.jpg,closing,True,No coin detected; Mask too large (83.4% of image),50.0
+burn_0105_vertical_flip.jpg,closing,True,No coin detected,75.0
+burn_0089_horizontal_flip.jpg,closing,True,No coin detected,75.0
+burn_0089_vertical_flip.jpg,closing,True,No coin detected,75.0
+burn_0089_rotation_90.jpg,closing,True,No coin detected,75.0
+burn_0089_brightness_increase.jpg,closing,True,No coin detected,75.0
+burn_0089_brightness_decrease.jpg,closing,True,No coin detected,75.0
+burn_0031_vertical_flip.jpg,closing,True,No coin detected,75.0
+burn_0031_brightness_increase.jpg,closing,True,No coin detected,75.0
+burn_0031_brightness_decrease.jpg,closing,True,No coin detected,75.0
+burn_0120_horizontal_flip.jpg,closing,True,No coin detected,75.0
+burn_0120_vertical_flip.jpg,closing,True,No coin detected,75.0
+burn_0120_rotation_90.jpg,closing,True,No coin detected,75.0
+burn_0163_horizontal_flip.jpg,closing,True,No coin detected; Mask too large (99.4% of image),50.0
+burn_0163_vertical_flip.jpg,closing,True,No coin detected; Mask too large (99.4% of image),50.0
+burn_0163_rotation_90.jpg,closing,True,No coin detected; Mask too large (99.4% of image),50.0
+burn_0163_brightness_increase.jpg,closing,True,No coin detected; Mask too large (99.4% of image),50.0
+burn_0024_horizontal_flip.jpg,closing,True,No coin detected,75.0
+burn_0024_vertical_flip.jpg,closing,True,No coin detected,75.0
+burn_0024_rotation_90.jpg,closing,True,No coin detected,75.0
+burn_0024_brightness_increase.jpg,closing,True,No coin detected,75.0
+burn_0024_brightness_decrease.jpg,closing,True,No coin detected,75.0
+burn_0176_brightness_increase.jpg,closing,True,No coin detected,75.0
+burn_0176_brightness_decrease.jpg,closing,True,No coin detected,75.0
+burn_0177_horizontal_flip.jpg,closing,True,No coin detected,75.0
+burn_0177_rotation_90.jpg,closing,True,No coin detected,75.0
+burn_0177_brightness_increase.jpg,closing,True,No coin detected; Mask too large (82.8% of image),50.0
+burn_0097_horizontal_flip.jpg,closing,True,No coin detected,75.0
+burn_0097_vertical_flip.jpg,closing,True,No coin detected,75.0
+burn_0097_rotation_90.jpg,closing,True,No coin detected,75.0
+burn_0097_brightness_increase.jpg,closing,True,No coin detected,75.0
+burn_0107_horizontal_flip.jpg,closing,True,No coin detected,75.0
+burn_0107_vertical_flip.jpg,closing,True,No coin detected,75.0
+burn_0107_rotation_90.jpg,closing,True,No coin detected,75.0
+burn_0107_brightness_decrease.jpg,closing,True,No coin detected,75.0
+burn_0028_vertical_flip.jpg,closing,True,No coin detected,75.0
+burn_0028_brightness_decrease.jpg,closing,True,No coin detected,75.0
+burn_0126_horizontal_flip.jpg,closing,True,No coin detected,75.0
+burn_0126_vertical_flip.jpg,closing,True,No coin detected,75.0
+burn_0126_rotation_90.jpg,closing,True,No coin detected,75.0
+burn_0149_horizontal_flip.jpg,closing,True,No coin detected,75.0
+burn_0149_vertical_flip.jpg,closing,True,No coin detected,75.0
+burn_0149_rotation_90.jpg,closing,True,No coin detected,75.0
+burn_0058_brightness_decrease.jpg,closing,True,No coin detected,75.0
+burn_0074_rotation_90.jpg,closing,True,No coin detected,75.0
+burn_0074_brightness_increase.jpg,closing,True,No coin detected,75.0
+burn_0074_brightness_decrease.jpg,closing,True,No coin detected,75.0
+burn_0095_horizontal_flip.jpg,closing,True,No coin detected,75.0
+burn_0095_brightness_decrease.jpg,closing,True,No coin detected,75.0
+burn_0023_brightness_increase.jpg,closing,True,No coin detected,75.0
+burn_0027_horizontal_flip.jpg,closing,True,No coin detected; Mask too large (94.0% of image),50.0
+burn_0027_vertical_flip.jpg,closing,True,No coin detected; Mask too large (94.0% of image),50.0
+burn_0027_rotation_90.jpg,closing,True,No coin detected; Mask too large (94.0% of image),50.0
+burn_0144_horizontal_flip.jpg,closing,True,No coin detected,75.0
+burn_0144_vertical_flip.jpg,closing,True,No coin detected,75.0
+burn_0144_brightness_increase.jpg,closing,True,No coin detected,75.0
+burn_0144_brightness_decrease.jpg,closing,True,No coin detected,75.0
+burn_0153_brightness_decrease.jpg,closing,True,No coin detected,75.0
+burn_0011_horizontal_flip.jpg,closing,True,No coin detected,75.0
+burn_0011_vertical_flip.jpg,closing,True,No coin detected,75.0
+burn_0011_rotation_90.jpg,closing,True,No coin detected,75.0
+burn_0011_brightness_increase.jpg,closing,True,No coin detected,75.0
+burn_0067_horizontal_flip.jpg,closing,True,No coin detected,75.0
+burn_0067_rotation_90.jpg,closing,True,No coin detected,75.0
+burn_0172_vertical_flip.jpg,closing,True,No coin detected,75.0
+burn_0172_rotation_90.jpg,closing,True,No coin detected,75.0
+burn_0025_brightness_increase.jpg,closing,True,No coin detected,75.0
+burn_0184_horizontal_flip.jpg,closing,True,No coin detected,75.0
+burn_0184_vertical_flip.jpg,closing,True,No coin detected,75.0
+burn_0184_rotation_90.jpg,closing,True,No coin detected,75.0
+burn_0184_brightness_increase.jpg,closing,True,No coin detected,75.0
+burn_0184_brightness_decrease.jpg,closing,True,No coin detected,75.0
+burn_0160_horizontal_flip.jpg,closing,True,No coin detected,75.0
+burn_0160_vertical_flip.jpg,closing,True,No coin detected,75.0
+burn_0160_rotation_90.jpg,closing,True,No coin detected,75.0
+burn_0160_brightness_increase.jpg,closing,True,No coin detected,75.0
+burn_0160_brightness_decrease.jpg,closing,True,No coin detected,75.0
+burn_0017_brightness_increase.jpg,closing,True,No coin detected; Mask too large (91.0% of image),50.0
+burn_0121_horizontal_flip.jpg,closing,True,No coin detected,75.0
+burn_0121_vertical_flip.jpg,closing,True,No coin detected,75.0
+burn_0121_rotation_90.jpg,closing,True,No coin detected,75.0
+burn_0121_brightness_increase.jpg,closing,True,No coin detected,75.0
+burn_0091_horizontal_flip.jpg,closing,True,No coin detected,75.0
+burn_0091_rotation_90.jpg,closing,True,No coin detected,75.0
+burn_0020_horizontal_flip.jpg,closing,True,No coin detected,75.0
+burn_0020_vertical_flip.jpg,closing,True,No coin detected,75.0
+burn_0020_rotation_90.jpg,closing,True,No coin detected,75.0
+burn_0020_brightness_increase.jpg,closing,True,No coin detected,75.0
+burn_0040_horizontal_flip.jpg,closing,True,No coin detected,75.0
+burn_0040_vertical_flip.jpg,closing,True,No coin detected,75.0
+burn_0040_rotation_90.jpg,closing,True,No coin detected,75.0
+burn_0040_brightness_increase.jpg,closing,True,No coin detected,75.0
+burn_0040_brightness_decrease.jpg,closing,True,No coin detected,75.0
+burn_0169_horizontal_flip.jpg,closing,True,No coin detected; Mask too large (80.8% of image),50.0
+burn_0169_vertical_flip.jpg,closing,True,No coin detected; Mask too large (80.9% of image),50.0
+burn_0169_rotation_90.jpg,closing,True,No coin detected; Mask too large (80.8% of image),50.0
+burn_0054_horizontal_flip.jpg,closing,True,No coin detected,75.0
+burn_0054_vertical_flip.jpg,closing,True,No coin detected,75.0
+burn_0054_rotation_90.jpg,closing,True,No coin detected,75.0
+burn_0054_brightness_increase.jpg,closing,True,No coin detected,75.0
+burn_0115_horizontal_flip.jpg,closing,True,No coin detected; Mask too large (99.1% of image),50.0
+burn_0115_vertical_flip.jpg,closing,True,No coin detected; Mask too large (99.1% of image),50.0
+burn_0115_rotation_90.jpg,closing,True,No coin detected; Mask too large (99.1% of image),50.0
+burn_0115_brightness_increase.jpg,closing,True,No coin detected; Mask too large (99.1% of image),50.0
+burn_0115_brightness_decrease.jpg,closing,True,No coin detected; Mask too large (99.1% of image),50.0
+burn_0060_horizontal_flip.jpg,closing,True,No coin detected,75.0
+burn_0060_vertical_flip.jpg,closing,True,No coin detected,75.0
+burn_0060_rotation_90.jpg,closing,True,No coin detected,75.0
+burn_0060_brightness_increase.jpg,closing,True,No coin detected,75.0
+burn_0060_brightness_decrease.jpg,closing,True,No coin detected,75.0
+burn_0135_horizontal_flip.jpg,closing,True,No coin detected; Mask too large (99.2% of image),50.0
+burn_0135_vertical_flip.jpg,closing,True,No coin detected; Mask too large (99.2% of image),50.0
+burn_0135_rotation_90.jpg,closing,True,No coin detected; Mask too large (99.2% of image),50.0
+burn_0135_brightness_increase.jpg,closing,True,No coin detected; Mask too large (99.2% of image),50.0
+burn_0135_brightness_decrease.jpg,closing,True,No coin detected; Mask too large (99.2% of image),50.0
+burn_0168_vertical_flip.jpg,closing,True,No coin detected,75.0
+burn_0168_rotation_90.jpg,closing,True,No coin detected,75.0
+burn_0168_brightness_increase.jpg,closing,True,No coin detected,75.0
+burn_0168_brightness_decrease.jpg,closing,True,No coin detected,75.0
+burn_0063_horizontal_flip.jpg,closing,True,No coin detected,75.0
+burn_0063_vertical_flip.jpg,closing,True,No coin detected,75.0
+burn_0063_rotation_90.jpg,closing,True,No coin detected,75.0
+burn_0063_brightness_decrease.jpg,closing,True,No coin detected,75.0
+burn_0004_brightness_decrease.jpg,closing,True,No coin detected,75.0
+burn_0036_horizontal_flip.jpg,closing,True,No coin detected,75.0
+burn_0036_vertical_flip.jpg,closing,True,No coin detected,75.0
+burn_0036_rotation_90.jpg,closing,True,No coin detected,75.0
+burn_0036_brightness_increase.jpg,closing,True,No coin detected,75.0
+burn_0158_horizontal_flip.jpg,closing,True,No coin detected,75.0
+burn_0158_vertical_flip.jpg,closing,True,No coin detected,75.0
+burn_0158_rotation_90.jpg,closing,True,No coin detected,75.0
+burn_0087_horizontal_flip.jpg,closing,True,No coin detected,75.0
+burn_0087_vertical_flip.jpg,closing,True,No coin detected,75.0
+burn_0087_rotation_90.jpg,closing,True,No coin detected,75.0
+burn_0087_brightness_decrease.jpg,closing,True,No coin detected,75.0
+burn_0019_brightness_increase.jpg,closing,True,No coin detected,75.0
+burn_0128_horizontal_flip.jpg,closing,True,No coin detected; Image too bright (brightness: 231.1),57.5
+burn_0128_vertical_flip.jpg,closing,True,No coin detected; Image too bright (brightness: 231.1),57.5
+burn_0128_rotation_90.jpg,closing,True,No coin detected; Image too bright (brightness: 231.1),57.5
+burn_0128_brightness_increase.jpg,closing,True,No coin detected; Image too bright (brightness: 238.7),57.5
+burn_0029_brightness_increase.jpg,closing,True,No coin detected,75.0
+burn_0029_brightness_decrease.jpg,closing,True,No coin detected,75.0
+burn_0119_brightness_increase.jpg,hole_filled,True,No coin detected; Mask too large (89.3% of image),50.0
+burn_0035_brightness_increase.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0130_horizontal_flip.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0130_vertical_flip.jpg,hole_filled,True,No coin detected,75.0
+burn_0130_rotation_90.jpg,hole_filled,True,No coin detected,75.0
+burn_0130_brightness_decrease.jpg,hole_filled,True,No coin detected,75.0
+burn_0181_vertical_flip.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0181_brightness_increase.jpg,hole_filled,True,No coin detected; Mask too large (99.4% of image),50.0
+burn_0181_brightness_decrease.jpg,hole_filled,True,No coin detected; Mask too large (99.3% of image),50.0
+burn_0108_brightness_increase.jpg,hole_filled,True,No coin detected; Mask too large (80.6% of image),50.0
+burn_0042_horizontal_flip.jpg,hole_filled,True,No coin detected; Mask too large (99.1% of image),50.0
+burn_0042_vertical_flip.jpg,hole_filled,True,No coin detected,75.0
+burn_0042_rotation_90.jpg,hole_filled,True,No coin detected,75.0
+burn_0042_brightness_increase.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0100_horizontal_flip.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0100_vertical_flip.jpg,hole_filled,True,No coin detected,75.0
+burn_0100_brightness_increase.jpg,hole_filled,True,No coin detected,75.0
+burn_0180_horizontal_flip.jpg,hole_filled,True,No coin detected,75.0
+burn_0180_vertical_flip.jpg,hole_filled,True,No coin detected,75.0
+burn_0180_brightness_decrease.jpg,hole_filled,True,No coin detected,75.0
+burn_0174_horizontal_flip.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0174_vertical_flip.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0174_rotation_90.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0174_brightness_increase.jpg,hole_filled,True,No coin detected; Mask too large (88.0% of image),50.0
+burn_0162_horizontal_flip.jpg,hole_filled,True,No coin detected; Mask too large (99.2% of image),50.0
+burn_0162_vertical_flip.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0162_rotation_90.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0072_rotation_90.jpg,hole_filled,True,No coin detected,75.0
+burn_0072_brightness_increase.jpg,hole_filled,True,No coin detected,75.0
+burn_0072_brightness_decrease.jpg,hole_filled,True,No coin detected,75.0
+burn_0097_brightness_decrease.jpg,hole_filled,True,No coin detected,75.0
+burn_0145_horizontal_flip.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0145_vertical_flip.jpg,hole_filled,True,No coin detected; Mask too large (82.6% of image),50.0
+burn_0145_rotation_90.jpg,hole_filled,True,No coin detected; Mask too large (82.6% of image),50.0
+burn_0145_brightness_increase.jpg,hole_filled,True,No coin detected; Mask too large (83.0% of image),50.0
+burn_0155_horizontal_flip.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0155_vertical_flip.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0155_rotation_90.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0155_brightness_increase.jpg,hole_filled,True,No coin detected,75.0
+burn_0155_brightness_decrease.jpg,hole_filled,True,No coin detected,75.0
+burn_0141_horizontal_flip.jpg,hole_filled,True,No coin detected,75.0
+burn_0141_vertical_flip.jpg,hole_filled,True,No coin detected,75.0
+burn_0141_rotation_90.jpg,hole_filled,True,No coin detected,75.0
+burn_0141_brightness_increase.jpg,hole_filled,True,No coin detected; Mask too large (89.0% of image),50.0
+burn_0141_brightness_decrease.jpg,hole_filled,True,No coin detected,75.0
+burn_0171_horizontal_flip.jpg,hole_filled,True,No coin detected,75.0
+burn_0171_vertical_flip.jpg,hole_filled,True,No coin detected,75.0
+burn_0171_rotation_90.jpg,hole_filled,True,No coin detected,75.0
+burn_0171_brightness_increase.jpg,hole_filled,True,No coin detected,75.0
+burn_0171_brightness_decrease.jpg,hole_filled,True,No coin detected,75.0
+burn_0090_horizontal_flip.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0090_vertical_flip.jpg,hole_filled,True,No coin detected,75.0
+burn_0090_rotation_90.jpg,hole_filled,True,No coin detected,75.0
+burn_0090_brightness_increase.jpg,hole_filled,True,No coin detected,75.0
+burn_0090_brightness_decrease.jpg,hole_filled,True,No coin detected,75.0
+burn_0008_horizontal_flip.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0008_vertical_flip.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0008_rotation_90.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0008_brightness_increase.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0105_vertical_flip.jpg,hole_filled,True,No coin detected,75.0
+burn_0089_horizontal_flip.jpg,hole_filled,True,No coin detected,75.0
+burn_0089_vertical_flip.jpg,hole_filled,True,No coin detected,75.0
+burn_0089_rotation_90.jpg,hole_filled,True,No coin detected,75.0
+burn_0089_brightness_increase.jpg,hole_filled,True,No coin detected,75.0
+burn_0089_brightness_decrease.jpg,hole_filled,True,No coin detected,75.0
+burn_0031_vertical_flip.jpg,hole_filled,True,No coin detected,75.0
+burn_0031_brightness_increase.jpg,hole_filled,True,No coin detected,75.0
+burn_0031_brightness_decrease.jpg,hole_filled,True,No coin detected,75.0
+burn_0120_horizontal_flip.jpg,hole_filled,True,No coin detected,75.0
+burn_0120_vertical_flip.jpg,hole_filled,True,No coin detected,75.0
+burn_0120_rotation_90.jpg,hole_filled,True,No coin detected,75.0
+burn_0163_horizontal_flip.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0163_vertical_flip.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0163_rotation_90.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0163_brightness_increase.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0024_horizontal_flip.jpg,hole_filled,True,No coin detected; Mask too large (99.7% of image),50.0
+burn_0024_vertical_flip.jpg,hole_filled,True,No coin detected; Mask too large (96.1% of image),50.0
+burn_0024_rotation_90.jpg,hole_filled,True,No coin detected; Mask too large (96.1% of image),50.0
+burn_0024_brightness_increase.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0024_brightness_decrease.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0176_brightness_increase.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0176_brightness_decrease.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0177_horizontal_flip.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0177_rotation_90.jpg,hole_filled,True,No coin detected; Mask too large (82.8% of image),50.0
+burn_0177_brightness_increase.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0097_horizontal_flip.jpg,hole_filled,True,No coin detected,75.0
+burn_0097_vertical_flip.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0097_rotation_90.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0097_brightness_increase.jpg,hole_filled,True,No coin detected,75.0
+burn_0107_horizontal_flip.jpg,hole_filled,True,No coin detected,75.0
+burn_0107_vertical_flip.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0107_rotation_90.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0107_brightness_decrease.jpg,hole_filled,True,No coin detected; Mask too large (98.0% of image),50.0
+burn_0028_vertical_flip.jpg,hole_filled,True,No coin detected,75.0
+burn_0028_brightness_decrease.jpg,hole_filled,True,No coin detected,75.0
+burn_0126_horizontal_flip.jpg,hole_filled,True,No coin detected; Mask too large (99.5% of image),50.0
+burn_0126_vertical_flip.jpg,hole_filled,True,No coin detected,75.0
+burn_0126_rotation_90.jpg,hole_filled,True,No coin detected,75.0
+burn_0149_horizontal_flip.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0149_vertical_flip.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0149_rotation_90.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0058_brightness_decrease.jpg,hole_filled,True,No coin detected; Mask too large (96.0% of image),50.0
+burn_0074_rotation_90.jpg,hole_filled,True,No coin detected,75.0
+burn_0074_brightness_increase.jpg,hole_filled,True,No coin detected,75.0
+burn_0074_brightness_decrease.jpg,hole_filled,True,No coin detected,75.0
+burn_0095_horizontal_flip.jpg,hole_filled,True,No coin detected,75.0
+burn_0095_brightness_decrease.jpg,hole_filled,True,No coin detected,75.0
+burn_0023_brightness_increase.jpg,hole_filled,True,No coin detected,75.0
+burn_0027_horizontal_flip.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0027_vertical_flip.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0027_rotation_90.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0144_horizontal_flip.jpg,hole_filled,True,No coin detected,75.0
+burn_0144_vertical_flip.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0144_brightness_increase.jpg,hole_filled,True,No coin detected,75.0
+burn_0144_brightness_decrease.jpg,hole_filled,True,No coin detected,75.0
+burn_0153_brightness_decrease.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0011_horizontal_flip.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0011_vertical_flip.jpg,hole_filled,True,No coin detected; Mask too large (93.4% of image),50.0
+burn_0011_rotation_90.jpg,hole_filled,True,No coin detected; Mask too large (93.4% of image),50.0
+burn_0011_brightness_increase.jpg,hole_filled,True,No coin detected; Mask too large (95.6% of image),50.0
+burn_0067_horizontal_flip.jpg,hole_filled,True,No coin detected; Mask too large (80.2% of image),50.0
+burn_0067_rotation_90.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0172_vertical_flip.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0172_rotation_90.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0025_brightness_increase.jpg,hole_filled,True,No coin detected; Mask too large (83.3% of image),50.0
+burn_0184_horizontal_flip.jpg,hole_filled,True,No coin detected,75.0
+burn_0184_vertical_flip.jpg,hole_filled,True,No coin detected,75.0
+burn_0184_rotation_90.jpg,hole_filled,True,No coin detected,75.0
+burn_0184_brightness_increase.jpg,hole_filled,True,No coin detected,75.0
+burn_0184_brightness_decrease.jpg,hole_filled,True,No coin detected,75.0
+burn_0160_horizontal_flip.jpg,hole_filled,True,No coin detected,75.0
+burn_0160_vertical_flip.jpg,hole_filled,True,No coin detected,75.0
+burn_0160_rotation_90.jpg,hole_filled,True,No coin detected,75.0
+burn_0160_brightness_increase.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0160_brightness_decrease.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0017_brightness_increase.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0121_horizontal_flip.jpg,hole_filled,True,No coin detected,75.0
+burn_0121_vertical_flip.jpg,hole_filled,True,No coin detected,75.0
+burn_0121_rotation_90.jpg,hole_filled,True,No coin detected,75.0
+burn_0121_brightness_increase.jpg,hole_filled,True,No coin detected,75.0
+burn_0091_horizontal_flip.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0091_rotation_90.jpg,hole_filled,True,No coin detected,75.0
+burn_0020_horizontal_flip.jpg,hole_filled,True,No coin detected,75.0
+burn_0020_vertical_flip.jpg,hole_filled,True,No coin detected,75.0
+burn_0020_rotation_90.jpg,hole_filled,True,No coin detected,75.0
+burn_0020_brightness_increase.jpg,hole_filled,True,No coin detected; Mask too large (92.0% of image),50.0
+burn_0040_horizontal_flip.jpg,hole_filled,True,No coin detected,75.0
+burn_0040_vertical_flip.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0040_rotation_90.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0040_brightness_increase.jpg,hole_filled,True,No coin detected,75.0
+burn_0040_brightness_decrease.jpg,hole_filled,True,No coin detected,75.0
+burn_0169_horizontal_flip.jpg,hole_filled,True,No coin detected; Mask too large (97.1% of image),50.0
+burn_0169_vertical_flip.jpg,hole_filled,True,No coin detected; Mask too large (87.5% of image),50.0
+burn_0169_rotation_90.jpg,hole_filled,True,No coin detected; Mask too large (87.5% of image),50.0
+burn_0054_horizontal_flip.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0054_vertical_flip.jpg,hole_filled,True,No coin detected,75.0
+burn_0054_rotation_90.jpg,hole_filled,True,No coin detected,75.0
+burn_0054_brightness_increase.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0115_horizontal_flip.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0115_vertical_flip.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0115_rotation_90.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0115_brightness_increase.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0115_brightness_decrease.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0060_horizontal_flip.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0060_vertical_flip.jpg,hole_filled,True,No coin detected,75.0
+burn_0060_rotation_90.jpg,hole_filled,True,No coin detected,75.0
+burn_0060_brightness_increase.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0060_brightness_decrease.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0135_horizontal_flip.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0135_vertical_flip.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0135_rotation_90.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0135_brightness_increase.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0135_brightness_decrease.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0168_vertical_flip.jpg,hole_filled,True,No coin detected,75.0
+burn_0168_rotation_90.jpg,hole_filled,True,No coin detected,75.0
+burn_0168_brightness_increase.jpg,hole_filled,True,No coin detected,75.0
+burn_0168_brightness_decrease.jpg,hole_filled,True,No coin detected,75.0
+burn_0063_horizontal_flip.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0063_vertical_flip.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0063_rotation_90.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0063_brightness_decrease.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0004_brightness_decrease.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0036_horizontal_flip.jpg,hole_filled,True,No coin detected; Mask too large (93.4% of image),50.0
+burn_0036_vertical_flip.jpg,hole_filled,True,No coin detected,75.0
+burn_0036_rotation_90.jpg,hole_filled,True,No coin detected,75.0
+burn_0036_brightness_increase.jpg,hole_filled,True,No coin detected,75.0
+burn_0158_horizontal_flip.jpg,hole_filled,True,No coin detected; Mask too large (96.5% of image),50.0
+burn_0158_vertical_flip.jpg,hole_filled,True,No coin detected,75.0
+burn_0158_rotation_90.jpg,hole_filled,True,No coin detected,75.0
+burn_0087_horizontal_flip.jpg,hole_filled,True,No coin detected,75.0
+burn_0087_vertical_flip.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0087_rotation_90.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0087_brightness_decrease.jpg,hole_filled,True,No coin detected,75.0
+burn_0019_brightness_increase.jpg,hole_filled,True,No coin detected; Mask too large (100.0% of image),50.0
+burn_0128_horizontal_flip.jpg,hole_filled,True,No coin detected; Image too bright (brightness: 231.1),57.5
+burn_0128_vertical_flip.jpg,hole_filled,True,No coin detected; Image too bright (brightness: 231.1),57.5
+burn_0128_rotation_90.jpg,hole_filled,True,No coin detected; Image too bright (brightness: 231.1),57.5
+burn_0128_brightness_increase.jpg,hole_filled,True,No coin detected; Image too bright (brightness: 238.7),57.5
+burn_0029_brightness_increase.jpg,hole_filled,True,No coin detected; Mask too large (99.9% of image),50.0
+burn_0029_brightness_decrease.jpg,hole_filled,True,No coin detected; Mask too large (99.4% of image),50.0
+burn_0057_brightness_decrease.jpg,hole_filled,True,Mask too large (87.8% of image); Image too blurry (variance: 43.9),57.5

@@ -1,0 +1,3 @@
+Method: binary_gray
+Reason: No coin detected
+Quality Score: 75.0

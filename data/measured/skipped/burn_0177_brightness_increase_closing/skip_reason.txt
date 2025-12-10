@@ -1,0 +1,3 @@
+Method: closing
+Reason: No coin detected; Mask too large (82.8% of image)
+Quality Score: 50.0

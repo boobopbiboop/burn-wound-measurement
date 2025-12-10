@@ -1,0 +1,3 @@
+Method: hole_filled
+Reason: No coin detected; Image too bright (brightness: 238.7)
+Quality Score: 57.5

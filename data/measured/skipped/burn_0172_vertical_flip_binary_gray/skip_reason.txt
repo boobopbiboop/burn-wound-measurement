@@ -1,0 +1,3 @@
+Method: binary_gray
+Reason: No coin detected; Mask too large (83.0% of image)
+Quality Score: 50.0

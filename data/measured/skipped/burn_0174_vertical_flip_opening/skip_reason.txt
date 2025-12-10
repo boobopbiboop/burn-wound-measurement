@@ -1,0 +1,3 @@
+Method: opening
+Reason: No coin detected; Mask too large (84.0% of image)
+Quality Score: 50.0

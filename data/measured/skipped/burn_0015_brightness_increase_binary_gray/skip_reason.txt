@@ -1,0 +1,3 @@
+Method: binary_gray
+Reason: Mask too large (85.0% of image); Image too bright (brightness: 235.8)
+Quality Score: 57.5

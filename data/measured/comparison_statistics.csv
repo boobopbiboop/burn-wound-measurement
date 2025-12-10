@@ -1,0 +1,6 @@
+method,count,skipped,success_rate,avg_area,std_area,min_area,max_area,coin_detected,coin_in_corner
+binary_gray,716,209,77.4,475.42,738.98,8.15,3800.76,716,616
+binary_hsv,725,200,78.4,359.68,731.18,2.08,4691.14,725,625
+opening,725,200,78.4,346.41,712.99,1.67,4676.35,725,625
+closing,725,200,78.4,347.96,715.81,1.67,4687.65,725,625
+hole_filled,724,201,78.3,457.1,948.75,1.67,5349.88,724,624
