@@ -184,6 +184,11 @@ def contour_extraction(image, binary):
 
 def calculate_wound_area(binary_mask, pixels_per_cm):
     """EXACT COPY dari batch"""
+    # Handle grayscale images by converting to binary
+    if len(binary_mask.shape) == 2 and binary_mask.dtype == np.uint8 and np.max(binary_mask) > 1:
+        # If it's grayscale (0-255), apply threshold
+        _, binary_mask = cv2.threshold(binary_mask, 127, 255, cv2.THRESH_BINARY)
+    
     area_pixels = np.sum(binary_mask > 0)
 
     if pixels_per_cm is None or pixels_per_cm == 0:
@@ -247,6 +252,16 @@ def create_visualization(original, mask, coin_info, area_info, ratio_info):
                    (center[0]-30, center[1]-radius-10),
                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, coin_color, 2)
 
+    # Handle grayscale masks by converting to binary first
+    if len(mask.shape) == 2:
+        if mask.dtype == np.uint8 and np.max(mask) > 1:
+            # Grayscale (0-255), convert to binary
+            _, mask = cv2.threshold(mask, 127, 255, cv2.THRESH_BINARY)
+    
+    # Resize mask to match original if different sizes
+    if mask.shape[:2] != original.shape[:2]:
+        mask = cv2.resize(mask, (original.shape[1], original.shape[0]), interpolation=cv2.INTER_NEAREST)
+    
     mask_colored = cv2.applyColorMap(mask, cv2.COLORMAP_JET)
     overlay = cv2.addWeighted(result_img, 0.7, mask_colored, 0.3, 0)
 
@@ -313,11 +328,14 @@ def main():
             seg_method = st.selectbox(
                 "Pilih metode:",
                 [
-                    "Hole Filled",
-                    "Binary HSV",
                     "Binary Gray",
-                    "Opening",
-                    "Closing"
+                    "Binary HSV",
+                    "Closing",
+                    "Contour",
+                    "Gray",
+                    "Hole Filled",
+                    "Opening",                 
+                    
                 ],
                 help="Hole Filled = hasil terbaik (sama dengan batch)"
             )
@@ -341,7 +359,7 @@ def main():
             show_steps = st.checkbox("Show Intermediate Steps", value=False)
         
         st.markdown("---")
-        st.info("💡 **Tip:**\n\nFull Pipeline = fleksibel, coba berbagai metode\n\nExact Batch = hasil sama persis dengan Colab")
+        # st.info("💡 **Tip:**\n\nFull Pipeline = fleksibel, coba berbagai metode\n\nExact Batch = hasil sama persis dengan Colab")
 
     # Main Content
     if processing_mode == "📸 Full Pipeline (1 File)":
@@ -384,6 +402,11 @@ def main():
                         gray, binary_gray = grayscale_otsu_segmentation(image_resized)
                         final_mask = binary_gray
                         intermediate = {"gray": gray, "binary": binary_gray}
+                    
+                    elif seg_method == "Gray":
+                        gray, binary_gray = grayscale_otsu_segmentation(image_resized)
+                        final_mask = gray  # Use grayscale directly (not binary)
+                        intermediate = {"gray": gray}
                         
                     elif seg_method == "Binary HSV":
                         binary_hsv = hsv_otsu_segmentation(image_resized)
@@ -401,6 +424,15 @@ def main():
                         opening, closing, hole_filled = morphological_processing(binary_hsv)
                         final_mask = closing
                         intermediate = {"binary_hsv": binary_hsv, "opening": opening, "closing": closing}
+                    
+                    elif seg_method == "Contour":
+                        # For contour: use hole_filled as base, then draw contours
+                        binary_hsv = hsv_otsu_segmentation(image_resized)
+                        opening, closing, hole_filled = morphological_processing(binary_hsv)
+                        contour_img, contours = contour_extraction(image_resized, hole_filled)
+                        # For measurement, use hole_filled (not the colored contour image)
+                        final_mask = hole_filled
+                        intermediate = {"hole_filled": hole_filled, "contour": contour_img}
                         
                     else:  # Hole Filled (Default/Recommended)
                         binary_hsv = hsv_otsu_segmentation(image_resized)
@@ -423,8 +455,19 @@ def main():
                     # Display results
                     with col2:
                         st.subheader(f"🎯 Result: {seg_method}")
-                        st.image(cv2.cvtColor(final_mask, cv2.COLOR_GRAY2RGB), width="stretch")
-                        st.caption(f"Non-zero pixels: {np.sum(final_mask > 0):,}")
+                        # Handle grayscale vs binary display
+                        if len(final_mask.shape) == 2:  # Grayscale or binary
+                            if seg_method == "Gray":
+                                st.image(final_mask, width="stretch", clamp=True)  # Grayscale
+                            else:
+                                st.image(cv2.cvtColor(final_mask, cv2.COLOR_GRAY2RGB), width="stretch")  # Binary
+                        else:  # Color (e.g., contour)
+                            st.image(cv2.cvtColor(final_mask, cv2.COLOR_BGR2RGB), width="stretch")
+                        
+                        if seg_method == "Gray":
+                            st.caption(f"Grayscale image (mean: {np.mean(final_mask):.1f})")
+                        else:
+                            st.caption(f"Non-zero pixels: {np.sum(final_mask > 0):,}")
                     
                     # Show intermediate steps
                     if show_steps and len(intermediate) > 1:
@@ -434,9 +477,13 @@ def main():
                         cols = st.columns(len(intermediate))
                         for idx, (name, img) in enumerate(intermediate.items()):
                             with cols[idx]:
-                                st.image(cv2.cvtColor(img, cv2.COLOR_GRAY2RGB) if len(img.shape) == 2 else cv2.cvtColor(img, cv2.COLOR_BGR2RGB), 
-                                        caption=name.replace('_', ' ').title(), 
-                                        width="stretch")
+                                # Handle different image types
+                                if len(img.shape) == 2:  # Grayscale/Binary
+                                    display_img = cv2.cvtColor(img, cv2.COLOR_GRAY2RGB)
+                                else:  # Color (BGR)
+                                    display_img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+                                
+                                st.image(display_img, caption=name.replace('_', ' ').title(), width="stretch")
                     
                     # Debug info
                     if show_debug:
@@ -532,15 +579,23 @@ def main():
             
             with col1:
                 st.image(cv2.cvtColor(original, cv2.COLOR_BGR2RGB), caption=f"Original: {original_file.name}", width="stretch")
+                st.caption(f"Size: {original.shape[1]}x{original.shape[0]} → Will be resized to 512x512")
             
             with col2:
                 st.image(mask, caption=f"Mask: {mask_file.name}", width="stretch", clamp=True)
+                st.caption(f"Size: {mask.shape[1]}x{mask.shape[0]}")
             
             if st.button("🚀 Calculate (Exact Batch)", type="primary", use_container_width=True):
                 with st.spinner("Calculating..."):
                     
-                    # Detect coin from original
-                    pixels_per_cm, coin_info = detect_coin_for_calibration(original, coin_diameter)
+                    # PERBAIKAN: Resize original ke 512x512 (sama dengan Colab preprocessing)
+                    original_resized = cv2.resize(original, (512, 512), interpolation=cv2.INTER_AREA)
+                    
+                    # PERBAIKAN: Resize original ke 512x512 (sama dengan Colab preprocessing)
+                    original_resized = cv2.resize(original, (512, 512), interpolation=cv2.INTER_AREA)
+                    
+                    # Detect coin from RESIZED original (bukan original!)
+                    pixels_per_cm, coin_info = detect_coin_for_calibration(original_resized, coin_diameter)
                     
                     # Calculate from mask
                     area_info = calculate_wound_area(mask, pixels_per_cm)
@@ -551,15 +606,21 @@ def main():
                     else:
                         ratio_info = calculate_wound_ratio(area_info['area_cm2'])
                     
-                    result_img = create_visualization(original, mask, coin_info, area_info, ratio_info)
+                    # Visualize dengan RESIZED original
+                    result_img = create_visualization(original_resized, mask, coin_info, area_info, ratio_info)
                     
                     # Debug
                     if show_debug:
                         st.markdown("---")
                         with st.expander("🐛 Debug Info", expanded=True):
-                            col_d1, col_d2 = st.columns(2)
+                            col_d1, col_d2, col_d3 = st.columns(3)
                             
                             with col_d1:
+                                st.markdown("**Original:**")
+                                st.write(f"Size: {original.shape[1]}x{original.shape[0]}")
+                                st.write(f"Resized to: 512x512")
+                            
+                            with col_d2:
                                 st.markdown("**Coin:**")
                                 if coin_info:
                                     st.write(f"✅ Detected")
@@ -567,8 +628,9 @@ def main():
                                 else:
                                     st.write(f"❌ Not detected")
                             
-                            with col_d2:
+                            with col_d3:
                                 st.markdown("**Mask:**")
+                                st.write(f"Size: {mask.shape[1]}x{mask.shape[0]}")
                                 st.write(f"Non-zero: {np.sum(mask > 0):,}")
                                 st.write(f"Formula: {np.sum(mask > 0):,} / {area_info['pixels_per_cm']**2:.2f} = {area_info['area_cm2']}")
                     
