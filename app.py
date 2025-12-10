@@ -313,7 +313,7 @@ def main():
             seg_method = st.selectbox(
                 "Pilih metode:",
                 [
-                    "Hole Filled (Recommended)",
+                    "Hole Filled",
                     "Binary HSV",
                     "Binary Gray",
                     "Opening",
@@ -363,7 +363,7 @@ def main():
             
             with col1:
                 st.subheader("📷 Original Image")
-                st.image(cv2.cvtColor(image, cv2.COLOR_BGR2RGB), use_container_width=True)
+                st.image(cv2.cvtColor(image, cv2.COLOR_BGR2RGB), width="stretch")
                 st.caption(f"Size: {image.shape[1]}x{image.shape[0]} → Will be resized to 512x512")
                 st.caption(f"File: {uploaded_file.name}")
             
@@ -381,29 +381,29 @@ def main():
                     
                     # STEP 2: Segmentation from RESIZED image
                     if seg_method == "Binary Gray":
-                        gray, binary_gray = grayscale_otsu_segmentation(image)
+                        gray, binary_gray = grayscale_otsu_segmentation(image_resized)
                         final_mask = binary_gray
                         intermediate = {"gray": gray, "binary": binary_gray}
                         
                     elif seg_method == "Binary HSV":
-                        binary_hsv = hsv_otsu_segmentation(image)
+                        binary_hsv = hsv_otsu_segmentation(image_resized)
                         final_mask = binary_hsv
                         intermediate = {"binary_hsv": binary_hsv}
                         
                     elif seg_method == "Opening":
-                        binary_hsv = hsv_otsu_segmentation(image)
+                        binary_hsv = hsv_otsu_segmentation(image_resized)
                         opening, closing, hole_filled = morphological_processing(binary_hsv)
                         final_mask = opening
                         intermediate = {"binary_hsv": binary_hsv, "opening": opening}
                         
                     elif seg_method == "Closing":
-                        binary_hsv = hsv_otsu_segmentation(image)
+                        binary_hsv = hsv_otsu_segmentation(image_resized)
                         opening, closing, hole_filled = morphological_processing(binary_hsv)
                         final_mask = closing
                         intermediate = {"binary_hsv": binary_hsv, "opening": opening, "closing": closing}
                         
                     else:  # Hole Filled (Default/Recommended)
-                        binary_hsv = hsv_otsu_segmentation(image)
+                        binary_hsv = hsv_otsu_segmentation(image_resized)
                         opening, closing, hole_filled = morphological_processing(binary_hsv)
                         final_mask = hole_filled
                         intermediate = {"binary_hsv": binary_hsv, "opening": opening, "closing": closing, "hole_filled": hole_filled}
@@ -423,7 +423,7 @@ def main():
                     # Display results
                     with col2:
                         st.subheader(f"🎯 Result: {seg_method}")
-                        st.image(cv2.cvtColor(final_mask, cv2.COLOR_GRAY2RGB), use_container_width=True)
+                        st.image(cv2.cvtColor(final_mask, cv2.COLOR_GRAY2RGB), width="stretch")
                         st.caption(f"Non-zero pixels: {np.sum(final_mask > 0):,}")
                     
                     # Show intermediate steps
@@ -436,7 +436,7 @@ def main():
                             with cols[idx]:
                                 st.image(cv2.cvtColor(img, cv2.COLOR_GRAY2RGB) if len(img.shape) == 2 else cv2.cvtColor(img, cv2.COLOR_BGR2RGB), 
                                         caption=name.replace('_', ' ').title(), 
-                                        use_container_width=True)
+                                        width="stretch")
                     
                     # Debug info
                     if show_debug:
@@ -465,7 +465,7 @@ def main():
                     # Results section
                     st.markdown("---")
                     st.subheader("📊 Measurement Visualization")
-                    st.image(cv2.cvtColor(result_img, cv2.COLOR_BGR2RGB), use_container_width=True)
+                    st.image(cv2.cvtColor(result_img, cv2.COLOR_BGR2RGB), width="stretch")
                     
                     # Metrics
                     st.markdown("---")
@@ -531,10 +531,10 @@ def main():
             col1, col2 = st.columns(2)
             
             with col1:
-                st.image(cv2.cvtColor(original, cv2.COLOR_BGR2RGB), caption=f"Original: {original_file.name}", use_container_width=True)
+                st.image(cv2.cvtColor(original, cv2.COLOR_BGR2RGB), caption=f"Original: {original_file.name}", width="stretch")
             
             with col2:
-                st.image(mask, caption=f"Mask: {mask_file.name}", use_container_width=True, clamp=True)
+                st.image(mask, caption=f"Mask: {mask_file.name}", width="stretch", clamp=True)
             
             if st.button("🚀 Calculate (Exact Batch)", type="primary", use_container_width=True):
                 with st.spinner("Calculating..."):
@@ -574,7 +574,7 @@ def main():
                     
                     # Results
                     st.markdown("---")
-                    st.image(cv2.cvtColor(result_img, cv2.COLOR_BGR2RGB), use_container_width=True)
+                    st.image(cv2.cvtColor(result_img, cv2.COLOR_BGR2RGB), width="stretch")
                     
                     st.markdown("---")
                     col_m1, col_m2, col_m3, col_m4, col_m5 = st.columns(5)
